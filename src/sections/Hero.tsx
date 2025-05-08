@@ -84,3 +84,18 @@ const Hero = () => {
 };
 
 export default Hero;
+{
+  /* <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="w-full h-full object-cover pointer-events-none select-none brightness-[1.3]"
+        >
+          <source src="/videos/hero.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </div> */
+}
