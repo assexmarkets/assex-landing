@@ -38,7 +38,7 @@ const FloatingInfoRows: React.FC<FloatingInfoRowsProps> = ({
           }`}
         >
           <div
-            className={`text-[#191A15] font-black rotate-[12deg] pointer-events-none select-none whitespace-nowrap ${
+            className={`font-secondary text-[#191A15] font-black rotate-[12deg] pointer-events-none select-none whitespace-nowrap ${
               floatingTextSizeClass ??
               "text-[32px] sm:text-5xl md:text-[90px] leading-snug md:leading-[200px]"
             }`}
@@ -63,7 +63,7 @@ const FloatingInfoRows: React.FC<FloatingInfoRowsProps> = ({
             >
               {/* Text Block */}
               <div className="w-full md:w-1/2">
-                <h2 className="text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#1f0d3f] leading-tight">
+                <h2 className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#1f0d3f] leading-tight">
                   {row.title}
                 </h2>
                 <p className="mt-4 text-sm sm:text-base md:text-lg leading-relaxed">

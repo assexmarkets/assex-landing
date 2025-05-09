@@ -17,7 +17,7 @@ const BenefitCardV2: React.FC<BenefitCardProps> = ({
       <div className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-[#0dae94]/10 text-[#0dae94] rounded-full mb-5">
         {icon}
       </div>
-      <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#191A15] mb-2">
+      <h3 className="font-secondary text-base sm:text-lg md:text-xl font-bold text-[#191A15] mb-2">
         {title}
       </h3>
       <p className="text-sm sm:text-base md:text-lg text-[#3F4550] leading-relaxed">

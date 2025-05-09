@@ -51,7 +51,9 @@ type ContactBlockProps = {
 
 const ContactBlock = ({ title, contact, note, isEmail }: ContactBlockProps) => (
   <div className="space-y-4 text-left text-[#1f0d3f] max-w-xs">
-    <h3 className="text-sm sm:text-base md:text-lg font-semibold">{title}</h3>
+    <h3 className="font-secondary text-sm sm:text-base md:text-lg font-semibold">
+      {title}
+    </h3>
     <div className="h-[3px] w-7 bg-[#1f0d3f] mx-0" />
     <p
       className={`text-sm sm:text-base md:text-lg ${

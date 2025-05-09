@@ -81,7 +81,7 @@ const SecureInfoSection: React.FC<SecureInfoSectionProps> = ({
                       <TickIcon />
                     </div>
                     <div>
-                      <div className="text-base md:text-lg text-[#1f0d3f] font-semibold">
+                      <div className="font-secondary text-base md:text-lg text-[#1f0d3f] font-semibold">
                         {point.title}
                       </div>
                       <p className="text-sm md:text-base leading-relaxed mt-2">
