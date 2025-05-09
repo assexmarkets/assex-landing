@@ -11,7 +11,7 @@ const MT5KeyFeatures = () => {
         <h1 className="font-secondary font-bold text-base sm:text-xl md:text-2xl lg:text-[32px] text-[#191A15] mt-6">
           Key <span className="text-[#0dae94]">Features</span>
         </h1>
-        <div className="mt-10 grid gap-8 md:grid-cols-3 justify-items-center">
+        <div className="mt-10 lg:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center w-full">
           <BenefitCard
             icon={<TrendIcon />}
             title="MetaEditor"

@@ -10,16 +10,17 @@ const PaamDetails = () => {
   };
 
   return (
-    <section className="">
-      <div className="max-w-6xl mx-auto">
+    <section className="section-padding">
+      <div className="max-w-6xl mx-auto flex flex-col gap-10 lg:gap-24">
         <ImageWithTextSection
           title={`Are you a Skillful Trader?\n Become a Fund Manager`}
           description="Your trading results are transparently displayed on our website, backed by robust manager security, full control over your account, and seamless automation that ensures all strategies and trade orders are accurately and instantly mirrored to your account for a reliable and hands-free trading experience."
           buttonText="Open PAAM Account"
           buttonOnClick={handleOpen}
+          reverseColumnOnMobile
           imageComponent={
             <Image
-              src="/images/paam1.png"
+              src="/images/paam01.png"
               alt="Fund Manager"
               width={320}
               height={480}
@@ -35,9 +36,10 @@ const PaamDetails = () => {
           buttonText="Open PAAM Account"
           buttonOnClick={handleOpen}
           imageOnLeft
+          reverseColumnOnMobile
           imageComponent={
             <Image
-              src="/images/paam2.png"
+              src="/images/cash-hand.png"
               alt="Investor Interface"
               width={612}
               height={408}
@@ -52,6 +54,7 @@ const PaamDetails = () => {
           description="At AssexMarkets, our PAAM system is built on strategic partnerships that drive shared success. Through this model, partners can maximize the value of their existing client base, turning relationships into lasting returns. At the same time, asset managers gain greater reach and exposure, connecting with a wider pool of investors who are ready to follow proven strategies."
           buttonText="Open PAAM Account"
           buttonOnClick={handleOpen}
+          reverseColumnOnMobile
           imageComponent={
             <Image
               src="/images/paam3.png"

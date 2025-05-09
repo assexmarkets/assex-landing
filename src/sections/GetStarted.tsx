@@ -50,13 +50,13 @@ export function StepsSection() {
           animate="visible"
           variants={fadeUp}
           custom={0}
-          className="flex flex-col lg:flex-row justify-between items-center gap-8"
+          className="flex flex-col lg:flex-row justify-between items-center gap-8 text-center xl:text-left"
         >
           <div className="flex-1 space-y-4">
-            <h2 className="text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#1f0e3f] font-secondary text-center md:text-left">
+            <h2 className="text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#1f0e3f] font-secondary">
               Register in 5 minutes with these 3 easy steps
             </h2>
-            <p className="text-base sm:text-lg text-[#3F4550]">
+            <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#3F4550]">
               Get started fast—no hassle, no waiting. Just follow these three
               straightforward steps and you’re all set!
             </p>
@@ -70,7 +70,7 @@ export function StepsSection() {
         </motion.div>
 
         {/* Steps Grid */}
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-center">
           {steps.map((step, index) => (
             <motion.div
               key={index}
@@ -79,9 +79,9 @@ export function StepsSection() {
               whileInView="visible"
               viewport={{ once: true }}
               custom={index}
-              className="bg-white rounded-3xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300"
+              className="w-full max-w-[360px] bg-white rounded-3xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300 mx-auto"
             >
-              <div className="w-full h-[430px] mb-6 relative">
+              <div className="w-full h-[250px] mb-6 relative">
                 <Image
                   src={step.image}
                   alt={step.title}

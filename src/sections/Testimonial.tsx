@@ -18,7 +18,7 @@ const Testimonial = () => {
           >
             What users are saying
           </h2>
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed mb-6 max-w-full sm:max-w-md">
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed mb-6 max-w-full lg:max-w-md mx-auto lg:mx-0">
             These are real-time reviews from our users about Assexmarkets.
           </p>
           <span className="inline-block bg-[#e6f9f7] text-[#0dae94] px-4 py-1 rounded-full font-semibold text-xs sm:text-sm">

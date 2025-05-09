@@ -117,7 +117,7 @@ const Footer = () => {
             {/* Legal Links */}
             <div className="flex gap-3 flex-wrap justify-center sm:justify-start">
               <Link
-                href="/terms"
+                href="/terms-and-conditions"
                 className="hover:font-semibold whitespace-nowrap"
               >
                 Terms & Conditions

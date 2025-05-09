@@ -34,7 +34,7 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
   return (
     <section className="bg-[rgba(0,204,177,0.02)] px-6 sm:px-10 md:px-12 lg:px-20 pt-12 lg:pt-24">
       <div
-        className={`mx-auto flex flex-col gap-y-10 ${
+        className={`mx-auto flex flex-col ${
           reverse ? "lg:flex-row-reverse" : "lg:flex-row"
         } items-center justify-between lg:gap-x-12 max-w-7xl`}
       >
@@ -50,13 +50,13 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
           </h2>
 
           {description && (
-            <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-6 max-w-[709px]">
+            <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-6 max-w-[709px] mx-auto">
               {description}
             </p>
           )}
 
           {bulletPoints && (
-            <ul className="max-w-[709px] list-disc list-inside text-sm sm:text-base md:text-lg mt-4 pl-5 space-y-2 text-[#3F4550]">
+            <ul className="max-w-[709px] mx-auto list-disc list-inside text-sm sm:text-base md:text-lg mt-4 pl-5 space-y-2 text-[#3F4550]">
               {bulletPoints.map((point, index) => (
                 <li key={index} className="ml-1">
                   {point}
@@ -67,14 +67,14 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
 
           {/* Buttons (optional) */}
           {(button1Text || button2Text) && (
-            <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center lg:justify-start gap-4 mt-8 w-full">
               {button1Text && (
                 <Button
                   icon={<WhiteFlameButtonIcon />}
                   text={button1Text}
                   variant="primary"
                   size="sm"
-                  className="w-full sm:w-auto"
+                  className="w-auto"
                   onClick={button1OnClick}
                 />
               )}
@@ -84,7 +84,7 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
                   text={button2Text}
                   variant="ghost"
                   size="sm"
-                  className="w-full sm:w-auto"
+                  className="w-auto"
                   onClick={button2OnClick}
                 />
               )}

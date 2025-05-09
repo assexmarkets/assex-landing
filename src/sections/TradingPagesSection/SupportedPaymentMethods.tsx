@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const SupportedPaymentsSection = () => {
   return (
-    <section className="mt-28 bg-[#1DA1F2]/5 py-12 px-4 sm:px-8">
+    <section className="section-padding bg-[#1DA1F2]/5 py-12">
       <div className="max-w-7xl mx-auto text-center text-[#1F0D3F]">
         {/* Title */}
         <motion.h2
@@ -54,7 +54,7 @@ const SupportedPaymentsSection = () => {
             className="lg:w-[54px] lg:h-full text-[#1DA1F2]"
           />
           <Image
-            src="/icons/BankTransfer.svg"
+            src="/icons/blueBT.svg"
             alt="Bank Transfer"
             width={28}
             height={17.4}

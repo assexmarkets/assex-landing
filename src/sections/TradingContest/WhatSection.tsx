@@ -22,10 +22,10 @@ const WhatSection = () => {
         >
           <div className="">
             <Image
-              src="/images/yellow-man.png"
+              src="/images/white-man.png"
               alt="What is the Trading Contest"
-              width={702}
-              height={533}
+              width={840}
+              height={560}
               className="rounded-xl w-[320px] sm:w-[480px] md:w-[540px] lg:w-[600px] h-auto"
               priority
             />

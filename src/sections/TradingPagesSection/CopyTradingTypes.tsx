@@ -14,7 +14,7 @@ const CopyTradingTypes = () => {
     // Navigate or trigger an action here
   };
   return (
-    <div>
+    <section className="section-padding flex flex-col gap-10 lg:gap-24">
       <ImageWithTextSection
         title="Follower"
         description="When you follow a Strategy Provider, their trades are automatically replicated in your account in real-time, allowing you to benefit from their trading strategies without having to manage the trades yourself. However, it’s important to remember that you retain full control over your account. You can customize settings such as the amount of capital to allocate, adjust risk management preferences, and stop copying the Strategy Provider at any time."
@@ -47,7 +47,7 @@ const CopyTradingTypes = () => {
           />
         }
       />
-    </div>
+    </section>
   );
 };
 

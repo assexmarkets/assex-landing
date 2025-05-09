@@ -18,7 +18,7 @@ const CryptoWhyAssexMarket = () => {
           intuitive interface and more. Available on live and demo trade
           accounts.
         </p>
-        <div className="mt-10 grid gap-10 md:grid-cols-3 justify-items-center">
+        <div className="mt-10 lg:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center w-full">
           <BenefitCardV2
             icon={<WithdrawalIcon />}
             title="Instant Withdrawals"

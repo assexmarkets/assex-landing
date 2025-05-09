@@ -10,6 +10,7 @@ interface ImageWithTextSectionProps {
   buttonOnClick?: () => void;
   imageComponent: React.ReactNode;
   imageOnLeft?: boolean;
+  reverseColumnOnMobile?: boolean;
 }
 
 const fadeInUp = {
@@ -24,11 +25,14 @@ const ImageWithTextSection: React.FC<ImageWithTextSectionProps> = ({
   buttonOnClick,
   imageComponent,
   imageOnLeft = false,
+  reverseColumnOnMobile,
 }) => {
   return (
-    <section className="section-padding">
+    <section className="">
       <div
-        className={`max-w-7xl mx-auto flex flex-col items-center gap-8 md:gap-20 lg:flex-row ${
+        className={`max-w-7xl mx-auto flex ${
+          reverseColumnOnMobile ? "flex-col-reverse" : "flex-col"
+        } items-center gap-8 md:gap-20 lg:flex-row ${
           imageOnLeft ? "lg:flex-row-reverse" : ""
         }`}
       >
@@ -43,7 +47,7 @@ const ImageWithTextSection: React.FC<ImageWithTextSectionProps> = ({
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#1f0d3f] mb-4 whitespace-pre-line leading-loose">
+          <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1f0d3f] mb-4 whitespace-pre-line leading-loose">
             {title}
           </h2>
           <p className="text-sm sm:text-base md:text-lg leading-relaxed ">
@@ -72,7 +76,7 @@ const ImageWithTextSection: React.FC<ImageWithTextSectionProps> = ({
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
         >
           <div
-            className={`w-full flex justify-center lg:justify-${
+            className={`w-full max-w-[500px] md:max-w-[600px] lg:max-w-[480px] xl:max-w-[560px] flex justify-center lg:justify-${
               imageOnLeft ? "start" : "end"
             } overflow-hidden rounded-none lg:rounded-xl`}
           >

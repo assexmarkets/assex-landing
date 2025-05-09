@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
 
         {/* Responsive Grid Layout */}
         <div className="relative mt-20 w-full flex flex-col items-center lg:flex-row lg:justify-center lg:gap-8">
-          <div className="relative w-[320px] sm:w-[500px] lg:w-[640px]">
+          <div className="relative w-[320px] sm:w-[500px] lg:w-[640px] lg:px-4">
             <Image
               src="/images/Wallet.png"
               alt="Platform overview"
@@ -113,7 +113,7 @@ const WhyChooseUs = () => {
           </div>
 
           {/* Mobile Stacked InfoBoxes */}
-          <div className="flex flex-col gap-6 mt-12 lg:hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center mt-12 lg:hidden">
             <InfoBox
               icon={<CardIcon />}
               title="Payment methods for your convenience"

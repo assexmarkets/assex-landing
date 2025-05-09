@@ -10,7 +10,7 @@ const MetaTraderDetails = () => {
   };
 
   return (
-    <div>
+    <section className="section-padding flex flex-col gap-10 lg:gap-24">
       <ImageWithTextSection
         title="Usage of MetaTrader 5"
         description="Fundamental and technical analysis, trading signals, algorithmic trading - the trading platform provides an arsenal of tools that enhance the trading experience. The platform also has broadcasts of the latest financial news reports for traders to keep up-to-date on the markets.
@@ -44,7 +44,7 @@ With the trading signals and copy trading capability in MetaTrader 5, traders ca
           />
         }
       />
-    </div>
+    </section>
   );
 };
 

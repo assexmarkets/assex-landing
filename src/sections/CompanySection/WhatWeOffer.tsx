@@ -11,7 +11,7 @@ const WhatWeOffer = () => {
         <h1 className="font-secondary font-bold text-sm sm:text-base md:text-xl text-[#191A15] mt-4">
           What We Offer
         </h1>
-        <div className="mt-10 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center">
+        <div className="mt-10 lg:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center w-full">
           <BenefitCard
             icon={<TrendIcon />}
             title="Multiple Account Types"

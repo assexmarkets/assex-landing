@@ -50,7 +50,7 @@ const TradingPageCTA: React.FC<TradingPageCTAProps> = ({
   const imageHeight = isSimulatedPage ? 346 : 390;
 
   return (
-    <section className="px-6 md:px-10 relative w-full bg-[#1f0d3f] pb-12 lg:pb-0 pt-8 overflow-hidden">
+    <section className="section-padding relative w-full bg-[#1f0d3f] pb-12 xl:pb-4 pt-8 overflow-hidden">
       {/* Grid Background */}
       <div
         className={cn(
@@ -62,11 +62,12 @@ const TradingPageCTA: React.FC<TradingPageCTAProps> = ({
       {/* Radial Fade Overlay */}
       <div className="pointer-events-none absolute inset-0 bg-[#1f0d3f] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
-      <div className="relative z-10 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 md:gap-20">
+      <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
         {/* Left Content */}
-        <div className="text-white text-center md:text-left flex flex-col items-center md:items-start">
+        <div className="text-white text-center lg:text-left flex flex-col items-center lg:items-start flex-1">
+          {/* Title */}
           <motion.h2
-            className="font-secondary text-2xl sm:text-[32px] font-bold leading-tight"
+            className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold leading-tight"
             variants={textVariant}
             initial="hidden"
             whileInView="visible"
@@ -76,8 +77,9 @@ const TradingPageCTA: React.FC<TradingPageCTAProps> = ({
             {title}
           </motion.h2>
 
+          {/* Description */}
           <motion.p
-            className="md:text-lg mt-4 max-w-lg"
+            className="text-sm sm:text-base md:text-lg leading-relaxed mt-4 max-w-lg"
             variants={textVariant}
             initial="hidden"
             whileInView="visible"
@@ -87,6 +89,24 @@ const TradingPageCTA: React.FC<TradingPageCTAProps> = ({
             {description}
           </motion.p>
 
+          {/* Image for Mobile/Tablet */}
+          <motion.div
+            className="block lg:hidden w-full max-w-[400px] sm:max-w-[500px] mx-auto mt-8"
+            variants={imageVariant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <Image
+              src={imageSrc}
+              alt="CTA Graphic"
+              width={imageWidth}
+              height={imageHeight}
+              className="object-contain w-full h-auto"
+            />
+          </motion.div>
+
+          {/* Buttons */}
           <motion.div
             className="mt-10 flex flex-col md:flex-row justify-center md:justify-start gap-4"
             variants={textVariant}
@@ -99,18 +119,20 @@ const TradingPageCTA: React.FC<TradingPageCTAProps> = ({
               icon={<WhiteFlameButtonIcon />}
               text="Create a Live Account"
               variant="primary"
+              size="md"
             />
             <Button
               icon={<VideoButtonIcon />}
               text="Try a Free Demo"
               variant="ghost"
+              size="md"
             />
           </motion.div>
         </div>
 
-        {/* Right Image */}
+        {/* Image for Desktop */}
         <motion.div
-          className="w-full max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[700px] mx-auto"
+          className="hidden lg:block w-full max-w-[600px] lg:max-w-[700px] mx-auto flex-1"
           variants={imageVariant}
           initial="hidden"
           whileInView="visible"

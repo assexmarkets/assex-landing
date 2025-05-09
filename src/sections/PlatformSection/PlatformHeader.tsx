@@ -18,7 +18,7 @@ const MT5Header = () => (
     button1Text="Download MetaTrader 5"
     button1OnClick={handleDownloadMT5}
     imageElement={
-      <div className="relative w-full max-w-[400px] aspect-[2/3]">
+      <div className="relative w-full max-w-[400px] aspect-[3/2]">
         <Image
           src="/images/IndicesAndMetalsImage.png"
           alt="Gold mint"

@@ -31,13 +31,13 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
-          className="font-secondary font-bold tracking-tight mx-auto leading-[1.4] text-balance"
+          className="font-secondary font-bold tracking-tight mx-auto leading-loose"
           style={{
             fontSize: "clamp(1.25rem, 3vw, 40px)",
-            maxWidth: "1085px",
+            maxWidth: "1080px",
           }}
         >
-          With{" "}
+          With
           <span className="inline-block text-[#0dae94]">
             <FlipWords words={words} />
             Market
@@ -70,7 +70,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Image */}
-      <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[661px] -mt-12 z-0">
+      <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[661px] -mt-16 sm:-mt-24 z-0">
         <Image
           src="/images/herobgImage.png"
           alt="Hero background"
@@ -84,18 +84,3 @@ const Hero = () => {
 };
 
 export default Hero;
-{
-  /* <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          className="w-full h-full object-cover pointer-events-none select-none brightness-[1.3]"
-        >
-          <source src="/videos/hero.webm" type="video/webm" />
-          Your browser does not support the video tag.
-        </video>
-      </div> */
-}
