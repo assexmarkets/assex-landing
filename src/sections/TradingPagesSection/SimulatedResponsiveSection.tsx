@@ -5,7 +5,7 @@ import PlatformInfoCard from "@/components/pageComponents/PlatformInfoCard";
 import { motion } from "framer-motion";
 import React from "react";
 
-const SimulatedResponsiveSection = () => {
+const DemoResponsiveSection = () => {
   return (
     <section className="section-padding">
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
@@ -55,4 +55,4 @@ const SimulatedResponsiveSection = () => {
   );
 };
 
-export default SimulatedResponsiveSection;
+export default DemoResponsiveSection;

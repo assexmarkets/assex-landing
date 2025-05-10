@@ -13,8 +13,8 @@ const footerLinks = [
     links: [
       { name: "Live Trading Accounts", href: "/live-account-trading" },
       {
-        name: "Simulated Trading Accounts",
-        href: "/simulated-account-trading",
+        name: "Demo Trading Accounts",
+        href: "/demo-account-trading",
       },
       { name: "Copy Trading", href: "/copy-trading" },
       { name: "Trading Contest", href: "/trading-contest" },

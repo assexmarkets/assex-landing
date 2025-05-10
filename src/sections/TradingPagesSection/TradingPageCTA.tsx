@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 
 interface TradingPageCTAProps {
-  isSimulatedPage?: boolean;
+  isDemoPage?: boolean;
 }
 
 const textVariant = {
@@ -32,22 +32,22 @@ const imageVariant = {
 };
 
 const TradingPageCTA: React.FC<TradingPageCTAProps> = ({
-  isSimulatedPage = false,
+  isDemoPage = false,
 }) => {
-  const title = isSimulatedPage
+  const title = isDemoPage
     ? "Explore Assexmarkets assets and markets"
     : "Trade with a trusted broker today";
 
-  const description = isSimulatedPage
+  const description = isDemoPage
     ? "Learn to trade with our various assets from leading global financial markets with the same conditions as on live trading accounts."
     : "Trade confidently and securely with AssexMarkets today.";
 
-  const imageSrc = isSimulatedPage
-    ? "/images/simulatedPageImage.svg"
+  const imageSrc = isDemoPage
+    ? "/images/demoPageImage.svg"
     : "/images/cta-graphic.png";
 
-  const imageWidth = isSimulatedPage ? 708 : 520;
-  const imageHeight = isSimulatedPage ? 346 : 390;
+  const imageWidth = isDemoPage ? 708 : 520;
+  const imageHeight = isDemoPage ? 346 : 390;
 
   return (
     <section className="section-padding relative w-full bg-[#1f0d3f] pb-12 xl:pb-4 pt-8 overflow-hidden">

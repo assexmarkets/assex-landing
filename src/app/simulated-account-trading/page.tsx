@@ -1,7 +1,7 @@
 import Image from "next/image";
 import TradingPagesHeading from "@/components/pageComponents/TradingPagesHeading";
-import ReusableBenefitsSection from "@/sections/TradingPagesSection/SimulatedBenefits";
-import SimulatedResponsiveSection from "@/sections/TradingPagesSection/SimulatedResponsiveSection";
+import ReusableBenefitsSection from "@/sections/TradingPagesSection/DemoBenefits";
+import DemoResponsiveSection from "@/sections/TradingPagesSection/DemoResponsiveSection";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 import { CheckListIcon, GroupIcon } from "../../../public/icons/svgs";
@@ -44,17 +44,17 @@ const benefitsData = [
 //   },
 // ];
 
-const SimulatedAccountTradingPage = () => {
+const DemoAccountTradingPage = () => {
   return (
     <>
       <TradingPagesHeading
-        title="Simulated"
+        title="Demo"
         highlight={true}
         subtitle="The assexmarkets risk-free demo trading account offers you the benefit of sharpening your trading skills and strategies, as well as mastering Assexmarkets' unique trading tools without financial risk."
         endText="Trading Account"
       />
       <ReusableBenefitsSection
-        title="Benefits of using an Assexmarkets Simulated Trading Account"
+        title="Benefits of using an Assexmarkets Demo Trading Account"
         benefits={benefitsData}
         rightContent={
           <Image
@@ -66,10 +66,10 @@ const SimulatedAccountTradingPage = () => {
           />
         }
       />
-      <SimulatedResponsiveSection />
-      <TradingPageCTA isSimulatedPage />
+      <DemoResponsiveSection />
+      <TradingPageCTA isDemoPage />
     </>
   );
 };
 
-export default SimulatedAccountTradingPage;
+export default DemoAccountTradingPage;

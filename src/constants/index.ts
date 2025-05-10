@@ -55,8 +55,8 @@ const navigationLinks = [
       },
       {
         id: 2,
-        href: "/simulated-account-trading",
-        text: "Simulated Account Trading",
+        href: "/demo-account-trading",
+        text: "Demo Account Trading",
         dropdown: false,
       },
       { id: 3, href: "/copy-trading", text: "Copy Trading", dropdown: false },

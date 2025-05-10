@@ -21,8 +21,8 @@ export function Navbar({ className }: { className?: string }) {
                 <HoveredLink href="/live-account-trading">
                   Live Account Trading
                 </HoveredLink>
-                <HoveredLink href="/simulated-account-trading">
-                  Simulated Account Trading
+                <HoveredLink href="/demo-account-trading">
+                  Demo Account Trading
                 </HoveredLink>
                 <HoveredLink href="/copy-trading">Copy Trading</HoveredLink>
                 <HoveredLink href="/trading-contest">

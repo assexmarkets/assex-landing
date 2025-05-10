@@ -1,5 +1,5 @@
 "use client";
-import ReusableBenefitsSection from "@/sections/TradingPagesSection/SimulatedBenefits";
+import ReusableBenefitsSection from "@/sections/TradingPagesSection/DemoBenefits";
 import Image from "next/image";
 import React from "react";
 import { GroupIcon } from "../../../public/icons/svgs";

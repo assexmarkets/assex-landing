@@ -1,6 +1,6 @@
 import TradingPagesHeading from "@/components/pageComponents/TradingPagesHeading";
-import ReusableBenefitsSection from "@/sections/TradingPagesSection/SimulatedBenefits";
-import SimulatedResponsiveSection from "@/sections/TradingPagesSection/SimulatedResponsiveSection";
+import ReusableBenefitsSection from "@/sections/TradingPagesSection/DemoBenefits";
+import DemoResponsiveSection from "@/sections/TradingPagesSection/DemoResponsiveSection";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 import { CheckListIcon, GroupIcon } from "../../../public/icons/svgs";
@@ -80,8 +80,8 @@ const LiveAccountTradingPage = () => {
           />
         }
       />
-      <SimulatedResponsiveSection />
-      <TradingPageCTA isSimulatedPage />
+      <DemoResponsiveSection />
+      <TradingPageCTA isDemoPage />
     </>
   );
 };

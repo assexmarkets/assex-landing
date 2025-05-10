@@ -63,7 +63,7 @@ const CallToAction = () => {
             size="sm"
           />
           <Button
-            onClick={() => router.push("/simulated-account-trading")}
+            onClick={() => router.push("/demo-account-trading")}
             text="Try a free Demo"
             icon={<VideoButtonIcon />}
             variant="ghost"
