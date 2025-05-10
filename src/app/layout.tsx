@@ -5,6 +5,7 @@ import Header from "@/sections/Header";
 import Footer from "@/sections/Footer";
 import { MenuContextProvider } from "@/context/MobileMenuContext";
 import MobileMenu from "@/components/MobileMenu";
+import Head from "next/head";
 
 const interFont = Inter({
   subsets: ["latin"],
@@ -61,6 +62,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        {/* ✅ Custom meta tags that can't go in `metadata` */}
+        <meta
+          name="googlebot"
+          content="index, nofollow, noimageindex, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        />
+        <meta name="twitter:image:height" content="50" />
+        <meta name="twitter:image:width" content="50" />
+        <meta name="next-size-adjust" />
+      </Head>
       <body
         className={`${interFont.variable} ${spaceGroteskFont.variable} antialiased`}
       >
