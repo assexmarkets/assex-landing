@@ -19,8 +19,9 @@ const spaceGroteskFont = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Assex Markets",
-  description: "Trading platform for Assex Markets",
+  title: "Assexmarkets Global - Ultra fast & Precise execution | Forex Broker",
+  description:
+    "ASM (Assexmarkets) is licensed global broker, providing trading services & facilities to both retail and institutional traders",
 };
 
 export default function RootLayout({
