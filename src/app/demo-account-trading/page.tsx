@@ -1,10 +1,10 @@
 import Image from "next/image";
 import TradingPagesHeading from "@/components/pageComponents/TradingPagesHeading";
-import ReusableBenefitsSection from "@/sections/TradingPagesSection/DemoBenefits";
-import DemoResponsiveSection from "@/sections/TradingPagesSection/DemoResponsiveSection";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 import { CheckListIcon, GroupIcon } from "../../../public/icons/svgs";
+import ReusableBenefitsSection from "@/sections/TradingPagesSection/SimulatedBenefits";
+import DemoResponsiveSection from "@/sections/TradingPagesSection/SimulatedResponsiveSection";
 
 const benefitsData = [
   {
