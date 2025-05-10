@@ -22,6 +22,36 @@ export const metadata: Metadata = {
   title: "Assexmarkets Global - Ultra fast & Precise execution | Forex Broker",
   description:
     "ASM (Assexmarkets) is licensed global broker, providing trading services & facilities to both retail and institutional traders",
+  openGraph: {
+    title:
+      "Assexmarkets Global - Ultra fast & Precise execution | Forex Broker",
+    description:
+      "ASM (Assexmarkets) is licensed global broker, providing trading services & facilities to both retail and institutional traders",
+    url: "https://www.assexmarkets.com",
+    siteName: "Assexmarkets",
+    images: [
+      {
+        url: "https://assexmarkets.com/assexxlogo.webp",
+        width: 1200,
+        height: 630,
+        alt: "Assexmarkets preview image",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title:
+      "Assexmarkets Global - Ultra fast & precise execution | Forex Broker",
+    description:
+      "ASM (Assexmarkets) is licensed global broker, providing trading services & facilities to both retail & institutional traders",
+    images: [
+      {
+        url: "https://assexmarkets.com/assexxlogo.webp",
+        alt: "Assexmarkets logo",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
