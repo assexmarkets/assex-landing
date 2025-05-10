@@ -50,6 +50,7 @@ const LoadingPage = () => {
           loop
           muted
           playsInline
+          preload="auto"
           className="w-full h-full object-contain"
         />
       </motion.div>

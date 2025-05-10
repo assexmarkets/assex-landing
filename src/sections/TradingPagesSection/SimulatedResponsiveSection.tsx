@@ -7,7 +7,7 @@ import React from "react";
 
 const DemoResponsiveSection = () => {
   return (
-    <section className="section-padding">
+    <section className="section-padding mb-20 lg:mb-30">
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
         <Badge text="Responsiveness" />
 

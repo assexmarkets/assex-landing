@@ -43,7 +43,7 @@ const TradingPageCTA: React.FC<TradingPageCTAProps> = ({
     : "Trade confidently and securely with AssexMarkets today.";
 
   const imageSrc = isDemoPage
-    ? "/images/simulatedPageImage.svg"
+    ? "/images/SimulatedPageImage.svg"
     : "/images/cta-graphic.png";
 
   const imageWidth = isDemoPage ? 708 : 520;

@@ -12,7 +12,7 @@ const CopyTradingTypes = () => {
         buttonText="Become a Follower"
         imageComponent={
           <Image
-            src="/images/copyTradingRight.png"
+            src="/images/CopyTradingRight.png"
             alt="Follower"
             width={702}
             height={560}
@@ -28,7 +28,7 @@ const CopyTradingTypes = () => {
         imageOnLeft
         imageComponent={
           <Image
-            src="/images/copyTradingLeft.png"
+            src="/images/CopyTradingLeft.png"
             alt="Strategy Provider"
             width={610}
             height={560}

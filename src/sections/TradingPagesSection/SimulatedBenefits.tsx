@@ -20,8 +20,8 @@ const ReusableBenefitsSection = ({
   rightContent,
 }: ReusableBenefitsProps) => {
   return (
-    <section className="mt-20 lg:mt-30 md:px-10">
-      <div className="max-w-7xl mx-auto bg-[#1DA1F2]/2 lg:rounded-[40px] px-6 sm:px-10 md:px-[50px] pt-[40px] md:pt-[55px] pb-[30px] md:pb-[45px]">
+    <section className="section-padding">
+      <div className="max-w-7xl mx-auto bg-[#1DA1F2]/5 lg:rounded-[40px] px-6 sm:px-10 md:px-12 pt-10 md:pt-12 pb-7 md:pb-12">
         {/* Title */}
         <motion.h1
           className="font-secondary text-[#1F0d3F] text-center font-bold text-base sm:text-xl md:text-2xl lg:text-[32px] max-w-2xs lg:max-w-3xl mx-auto leading-snug sm:leading-relaxed"
