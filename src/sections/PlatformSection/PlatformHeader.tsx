@@ -11,9 +11,6 @@ const MT5Header = () => (
       "Connect to MT5 Webtrader from your live or demo account",
     ]}
     button1Text="Download MetaTrader 5"
-    button1OnClick={() =>
-      window.open("https://my.assexmarkets.com/auth/register", "_blank")
-    }
     imageElement={
       <div className="relative w-full max-w-[400px] aspect-[3/2]">
         <Image
