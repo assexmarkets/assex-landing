@@ -62,18 +62,22 @@ export default function Header() {
 
             {/* Auth Buttons for desktop */}
             <div className="flex items-center gap-3">
-              <Link
-                href="/signup"
+              <a
+                href="https://assexmarkets.com/auth/register"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-secondary font-bold text-white bg-[#0DAE94] px-4.5 py-2 text-sm rounded-4xl whitespace-nowrap"
               >
                 Sign Up
-              </Link>
-              <Link
-                href="/signin"
+              </a>
+              <a
+                href="https://assexmarkets.com/auth/login"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-secondary font-bold border border-[#0DAE94] text-[#0DAE94] px-4.5 py-2 text-sm rounded-4xl whitespace-nowrap"
               >
                 Sign In
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMenuContext } from "@/context/MobileMenuContext";
 import Close from "./icons/Close";
-// import CaretUp from "./icons/CaretUp";
 import Link from "next/link";
 import Image from "next/image";
 import { navigationLinks, staticLinks } from "@/constants";
@@ -115,16 +114,21 @@ export default function MobileMenu() {
           {/* CTA Buttons */}
 
           <div className="p-6 flex flex-col gap-5">
-            <Link
-              href="/signup"
+            <a
+              href="https://assexmarkets.com/auth/register"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMenuOpened(false)}
               className="group flex items-center justify-center gap-2 bg-primary text-white text-center py-3 rounded-full font-semibold transition-all duration-300 shadow-md shadow-primary/30 hover:shadow-lg hover:shadow-primary/50 hover:bg-primary/90 hover:scale-[1.02]"
             >
               <WhiteFlameButtonIcon />
               Sign Up
-            </Link>
-            <Link
-              href="/signin"
+            </a>
+
+            <a
+              href="https://assexmarkets.com/auth/login"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMenuOpened(false)}
               className="group flex items-center justify-center gap-2 text-primary text-center border border-primary py-3 rounded-full font-semibold transition-all duration-300 shadow-md shadow-primary/10 hover:shadow-lg hover:shadow-primary/20 hover:bg-primary/5 hover:scale-[1.02]"
             >
@@ -141,7 +145,7 @@ export default function MobileMenu() {
                 />
               </svg>
               Sign In
-            </Link>
+            </a>
           </div>
         </motion.div>
       )}
