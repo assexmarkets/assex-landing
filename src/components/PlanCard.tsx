@@ -24,7 +24,7 @@ export const PlanCard: React.FC<PlanCardProps> = ({
   return (
     <div
       className={clsx(
-        "relative max-w-[352px] min-h-[600px] xl:min-h-[700px] rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 ease-in-out",
+        "relative max-w-[352px] min-h-[500px] xl:min-h-[600px] rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 ease-in-out",
         "bg-white shadow-lg hover:bg-[#F3FFFD] hover:shadow-xl hover:border-[#00CCB1] hover:border-2",
         isPro &&
           "border-2 border-[#00CCB1] shadow-[0_0_60px_0_rgba(0,204,177,0.3)]"
@@ -45,7 +45,7 @@ export const PlanCard: React.FC<PlanCardProps> = ({
       <div
         className={clsx("flex flex-col", isPro ? "gap-2 mt-8" : "gap-4 mt-10")}
       >
-        <p className="text-base md:text-lg text-[#3F4550] leading-relaxed text-center px-2">
+        <p className="text-sm md:text-base text-[#3F4550] leading-relaxed text-center px-2">
           {description}
         </p>
 
@@ -56,6 +56,12 @@ export const PlanCard: React.FC<PlanCardProps> = ({
               text="Register"
               icon={WhiteFlameButtonIcon()}
               size="md"
+              onClick={() =>
+                window.open(
+                  "https://my.assexmarkets.com/auth/register",
+                  "_blank"
+                )
+              }
             />
           )}
         </div>
@@ -65,9 +71,9 @@ export const PlanCard: React.FC<PlanCardProps> = ({
         {benefits.map((benefit, idx) => (
           <li
             key={idx}
-            className="flex items-start gap-3 text-sm sm:text-base md:text-lg text-[#3F4550] leading-snug"
+            className="flex items-start gap-3 text-sm sm:text-base text-[#3F4550] leading-snug"
           >
-            <span className="flex-shrink-0 mt-1">
+            <span className="flex-shrink-0">
               <CheckCircle />
             </span>
             <span>{benefit}</span>

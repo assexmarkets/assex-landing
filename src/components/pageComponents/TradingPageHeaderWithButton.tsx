@@ -15,7 +15,6 @@ type TradingPageHeaderProps = {
   title: string | TitlePart[];
   subtitle: string;
   buttonText: string;
-  onButtonClick?: () => void;
 };
 
 const containerVariants = {
@@ -34,7 +33,6 @@ export const TradingPageHeaderWithButton: React.FC<TradingPageHeaderProps> = ({
   title,
   subtitle,
   buttonText,
-  onButtonClick,
 }) => {
   const renderTitle = () => {
     if (typeof title === "string") {
@@ -102,7 +100,9 @@ export const TradingPageHeaderWithButton: React.FC<TradingPageHeaderProps> = ({
         <Button
           icon={<WhiteFlameButtonIcon />}
           text={buttonText}
-          onClick={onButtonClick}
+          onClick={() =>
+            window.open("https://my.assexmarkets.com/auth/register", "_blank")
+          }
           variant="primary"
           size="md"
         />

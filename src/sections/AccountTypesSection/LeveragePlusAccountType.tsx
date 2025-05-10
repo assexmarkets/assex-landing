@@ -78,7 +78,15 @@ const LeveragePlusAccountType = () => {
             features and flexibility.
           </p>
           <div className="mt-4 md:mt-10 flex justify-center">
-            <CustomButton className="flex items-center gap-2 bg-[white] text-[#2D3139] rounded-[48px] font-medium border border-[#2D3139]/40">
+            <CustomButton
+              onClick={() =>
+                window.open(
+                  "https://my.assexmarkets.com/auth/register",
+                  "_blank"
+                )
+              }
+              className="flex items-center gap-2 bg-[white] text-[#2D3139] rounded-[48px] font-medium border border-[#2D3139]/40"
+            >
               <GiftIcon />
               Try free demo
             </CustomButton>

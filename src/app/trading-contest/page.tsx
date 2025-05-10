@@ -42,7 +42,6 @@ const StandardTradingAccountPage = () => {
         ]}
         subtitle={`Join our Assexmarkets Trading Contest — where strategy meets competition and top performers walk away with exciting rewards!\n Whether you're a seasoned trader or just sharpening your edge, this is your chance to test your skills, climb the leaderboard, and earn recognition in a high-stakes yet supportive trading environment.`}
         buttonText="Join Assexmarkets Trading Contest"
-        onButtonClick={() => console.log("Button clicked! 🎯")}
       />
       <WhatSection />
       <Benefits />

@@ -63,7 +63,15 @@ export function StepsSection() {
           </div>
           {/* Desktop Button */}
           <div className="hidden lg:block">
-            <button className="bg-[#1f0e3f] text-white px-6 py-3 text-sm sm:text-base rounded-full font-medium whitespace-nowrap shadow-[0_0_20px_rgba(31,14,63,0.6)] transition duration-300 hover:shadow-[0_0_35px_rgba(31,14,63,0.9)] hover:scale-105">
+            <button
+              onClick={() =>
+                window.open(
+                  "https://my.assexmarkets.com/auth/register",
+                  "_blank"
+                )
+              }
+              className="bg-[#1f0e3f] text-white px-6 py-3 text-sm sm:text-base rounded-full font-medium whitespace-nowrap shadow-[0_0_20px_rgba(31,14,63,0.6)] transition duration-300 hover:shadow-[0_0_35px_rgba(31,14,63,0.9)] hover:scale-105"
+            >
               Get Started
             </button>
           </div>
@@ -99,7 +107,12 @@ export function StepsSection() {
         </div>
 
         <div className="mt-10 lg:hidden flex justify-center">
-          <button className="w-[288px] bg-[#1f0e3f] text-white px-6 py-3 text-sm sm:text-base rounded-full font-medium whitespace-nowrap shadow-[0_0_20px_rgba(31,14,63,0.6)] transition duration-300 hover:shadow-[0_0_35px_rgba(31,14,63,0.9)] hover:scale-105">
+          <button
+            onClick={() =>
+              window.open("https://my.assexmarkets.com/auth/register", "_blank")
+            }
+            className="w-[288px] bg-[#1f0e3f] text-white px-6 py-3 text-sm sm:text-base rounded-full font-medium whitespace-nowrap shadow-[0_0_20px_rgba(31,14,63,0.6)] transition duration-300 hover:shadow-[0_0_35px_rgba(31,14,63,0.9)] hover:scale-105"
+          >
             Get Started
           </button>
         </div>

@@ -78,7 +78,12 @@ const CopyTradingAccountTypes = () => {
                       icon={<WhiteFlameButtonIcon />}
                       size="md"
                       fullWidth
-                      onClick={() => console.log("Custom button clicked")}
+                      onClick={() =>
+                        window.open(
+                          "https://my.assexmarkets.com/auth/register",
+                          "_blank"
+                        )
+                      }
                     />
                   }
                 />
@@ -103,7 +108,12 @@ const CopyTradingAccountTypes = () => {
                       icon={<WhiteFlameButtonIcon />}
                       size="md"
                       fullWidth
-                      onClick={() => console.log("Custom button clicked")}
+                      onClick={() =>
+                        window.open(
+                          "https://my.assexmarkets.com/auth/register",
+                          "_blank"
+                        )
+                      }
                     />
                   }
                 />
@@ -127,7 +137,12 @@ const CopyTradingAccountTypes = () => {
           </p>
           <div className="mt-10 flex justify-center">
             <CustomButton
-              // onClick={() => router.push("/demo-account-trading")}
+              onClick={() =>
+                window.open(
+                  "https://my.assexmarkets.com/auth/register",
+                  "_blank"
+                )
+              }
               className="flex items-center gap-2 bg-[white] text-[#2D3139] rounded-[48px] font-medium border border-[#2D3139]/40"
             >
               <GiftIcon />

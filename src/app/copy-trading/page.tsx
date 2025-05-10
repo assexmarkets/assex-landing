@@ -45,7 +45,6 @@ const ProTradingAccountPage = () => {
         ]}
         subtitle="Copy Trading is an effective tool that allows traders of all experience levels to replicate the trades of others, called Strategy Providers, in real time. This approach enables beginners to learn from seasoned professionals while giving experienced traders the opportunity to diversify their portfolios by following multiple strategies."
         buttonText="Join Copy Trading"
-        onButtonClick={() => console.log("Button clicked! 🎯")}
       />
       <CopyTradingImage />
       <CopyTradingAccountTypes />

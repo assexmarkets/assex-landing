@@ -2,11 +2,6 @@
 import MarketHeader from "@/components/marketsComponent/MarketHeader";
 import Image from "next/image";
 
-const handleDownloadMT5 = () => {
-  // logic to download or navigate
-  console.log("Downloading MT5...");
-};
-
 const MT5Header = () => (
   <MarketHeader
     title="MetaTrader 5 (MT5) — Trade Smarter, Faster, Anywhere"
@@ -16,7 +11,9 @@ const MT5Header = () => (
       "Connect to MT5 Webtrader from your live or demo account",
     ]}
     button1Text="Download MetaTrader 5"
-    button1OnClick={handleDownloadMT5}
+    button1OnClick={() =>
+      window.open("https://my.assexmarkets.com/auth/register", "_blank")
+    }
     imageElement={
       <div className="relative w-full max-w-[400px] aspect-[3/2]">
         <Image

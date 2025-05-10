@@ -58,6 +58,12 @@ const PlatformTourCTA = () => {
               icon={<WhiteFlameButtonIcon />}
               text="Take a Platform Tour"
               variant="primary"
+              onClick={() =>
+                window.open(
+                  "https://my.assexmarkets.com/auth/register",
+                  "_blank"
+                )
+              }
             />
           </div>
         </motion.div>

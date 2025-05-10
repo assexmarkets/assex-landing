@@ -7,7 +7,6 @@ import {
   VideoButtonIcon,
   WhiteFlameButtonIcon,
 } from "../../public/icons/ButtonIcons";
-import { useRouter } from "next/navigation";
 
 const container = {
   hidden: {},
@@ -28,7 +27,6 @@ const fadeInUp = {
 };
 
 const CallToAction = () => {
-  const router = useRouter();
   return (
     <section className="section-padding bg-[#1DA1F2]/5 py-12">
       <motion.div
@@ -61,13 +59,19 @@ const CallToAction = () => {
             icon={<WhiteFlameButtonIcon />}
             variant="primary"
             size="sm"
+            onClick={() =>
+              window.open("https://my.assexmarkets.com/auth/register", "_blank")
+            }
           />
           <Button
-            onClick={() => router.push("/demo-account-trading")}
+            // onClick={() => router.push("/demo-account-trading")}
             text="Try a free Demo"
             icon={<VideoButtonIcon />}
             variant="ghost"
             size="sm"
+            onClick={() =>
+              window.open("https://my.assexmarkets.com/auth/register", "_blank")
+            }
           />
         </motion.div>
       </motion.div>

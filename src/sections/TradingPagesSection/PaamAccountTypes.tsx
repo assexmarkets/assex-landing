@@ -105,7 +105,12 @@ const PortfolioManagementAccountTypes = () => {
           </p>
           <div className="mt-10 flex justify-center">
             <CustomButton
-              // onClick={() => router.push("/demo-portfolio-management")}
+              onClick={() =>
+                window.open(
+                  "https://my.assexmarkets.com/auth/register",
+                  "_blank"
+                )
+              }
               className="flex items-center gap-2 bg-[white] text-[#2D3139] rounded-[48px] font-medium border border-[#2D3139]/40"
             >
               <GiftIcon />

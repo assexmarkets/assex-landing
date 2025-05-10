@@ -9,7 +9,6 @@ import {
   StandardIcon,
 } from "../../../public/icons/AccountTypesIcons";
 import { PlanCard } from "@/components/PlanCard";
-// import { useRouter } from "next/navigation";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -21,8 +20,6 @@ const containerVariants = {
 };
 
 const StandardTradingAccountTypes = () => {
-  // const router = useRouter();
-
   return (
     <section className="section-padding">
       <div className="max-w-7xl mx-auto">
@@ -108,7 +105,12 @@ const StandardTradingAccountTypes = () => {
           </p>
           <div className="mt-4 md:mt-10 flex justify-center">
             <CustomButton
-              // onClick={() => router.push("/demo-account-trading")}
+              onClick={() =>
+                window.open(
+                  "https://my.assexmarkets.com/auth/register",
+                  "_blank"
+                )
+              }
               className="flex items-center gap-2 bg-[white] text-[#2D3139] rounded-[48px] font-medium border border-[#2D3139]/40"
             >
               <GiftIcon />

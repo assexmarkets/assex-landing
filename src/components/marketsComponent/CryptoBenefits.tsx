@@ -1,5 +1,4 @@
 "use client";
-import ReusableBenefitsSection from "@/sections/TradingPagesSection/DemoBenefits";
 import Image from "next/image";
 import React from "react";
 import { GroupIcon } from "../../../public/icons/svgs";
@@ -8,6 +7,7 @@ import {
   VideoButtonIcon,
   WhiteFlameButtonIcon,
 } from "../../../public/icons/ButtonIcons";
+import ReusableBenefitsSection from "@/sections/TradingPagesSection/SimulatedBenefits";
 
 const benefitsData = [
   {
@@ -49,11 +49,23 @@ const CryptoBenefits = () => {
               icon={<WhiteFlameButtonIcon />}
               text="Create a Live Account"
               variant="primary"
+              onClick={() =>
+                window.open(
+                  "https://my.assexmarkets.com/auth/register",
+                  "_blank"
+                )
+              }
             />
             <Button
               icon={<VideoButtonIcon />}
               text="Try a Free Demo"
               variant="ghost"
+              onClick={() =>
+                window.open(
+                  "https://my.assexmarkets.com/auth/register",
+                  "_blank"
+                )
+              }
             />
           </div>
         </div>

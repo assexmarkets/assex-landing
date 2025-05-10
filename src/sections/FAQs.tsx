@@ -36,15 +36,24 @@ const FAQs = ({ faqItems }: FAQsProps) => {
         {/* Right: FAQ List */}
         <div className="md:w-1/2 flex flex-col gap-6">
           {faqItems.map((faq, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-white font-secondary rounded-2xl border border-lime-500 p-6"
+              layout
+              className={twMerge(
+                "bg-white font-secondary rounded-2xl border p-6 transition-all duration-300",
+                selectedFaq === index
+                  ? "border-lime-500 shadow-md"
+                  : "border-neutral-200"
+              )}
             >
-              <div
-                className="flex items-center justify-between cursor-pointer"
-                onClick={() => setSelectedFaq(index)}
+              <button
+                className="flex w-full items-center justify-between cursor-pointer focus:outline-none"
+                onClick={() =>
+                  setSelectedFaq(selectedFaq === index ? -1 : index)
+                }
+                aria-expanded={selectedFaq === index}
               >
-                <h3 className="font-medium">{faq.question}</h3>
+                <h3 className="font-medium text-left">{faq.question}</h3>
                 <svg
                   width="16"
                   height="17"
@@ -64,20 +73,22 @@ const FAQs = ({ faqItems }: FAQsProps) => {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </div>
+              </button>
+
               <AnimatePresence>
                 {selectedFaq === index && (
                   <motion.div
-                    initial={{ height: 0, marginTop: 0 }}
-                    animate={{ height: "auto", marginTop: 16 }}
-                    exit={{ height: 0, marginTop: 0 }}
+                    initial={{ height: 0, opacity: 0, marginTop: 0 }}
+                    animate={{ height: "auto", opacity: 1, marginTop: 16 }}
+                    exit={{ height: 0, opacity: 0, marginTop: 0 }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="overflow-hidden"
                   >
-                    <p className="mt-2">{faq.answer}</p>
+                    <p className="mt-2 text-neutral-700">{faq.answer}</p>
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -1,3 +1,4 @@
+"use client";
 import FAQs, { FAQItem } from "@/sections/FAQs";
 import MetalBenefits from "@/sections/MarketPagesSection/MetalBenefits";
 import MetalsPageHeader from "@/sections/MarketPagesSection/MetalsPageHeader";

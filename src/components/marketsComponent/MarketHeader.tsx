@@ -14,8 +14,6 @@ interface MarketHeaderProps {
   bulletPoints?: string[];
   button1Text?: string;
   button2Text?: string;
-  button1OnClick?: () => void;
-  button2OnClick?: () => void;
   reverse?: boolean;
   imageElement: React.ReactNode;
 }
@@ -26,8 +24,6 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
   bulletPoints,
   button1Text,
   button2Text,
-  button1OnClick,
-  button2OnClick,
   reverse = false,
   imageElement,
 }) => {
@@ -75,7 +71,12 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
                   variant="primary"
                   size="sm"
                   className="w-auto"
-                  onClick={button1OnClick}
+                  onClick={() =>
+                    window.open(
+                      "https://my.assexmarkets.com/auth/register",
+                      "_blank"
+                    )
+                  }
                 />
               )}
               {button2Text && (
@@ -85,7 +86,12 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
                   variant="ghost"
                   size="sm"
                   className="w-auto"
-                  onClick={button2OnClick}
+                  onClick={() =>
+                    window.open(
+                      "https://my.assexmarkets.com/auth/register",
+                      "_blank"
+                    )
+                  }
                 />
               )}
             </div>

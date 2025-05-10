@@ -81,11 +81,17 @@ const TradingHeaderSection: React.FC<TradingHeaderSectionProps> = ({
             text="Create a Live Account"
             icon={<WhiteFlameButtonIcon />}
             variant="primary"
+            onClick={() =>
+              window.open("https://my.assexmarkets.com/auth/register", "_blank")
+            }
           />
           <Button
             variant="ghost"
             text="Try a Free Demo"
             icon={<VideoButtonIcon />}
+            onClick={() =>
+              window.open("https://my.assexmarkets.com/auth/register", "_blank")
+            }
           />
         </motion.div>
       </motion.div>

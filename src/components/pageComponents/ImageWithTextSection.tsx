@@ -7,7 +7,6 @@ interface ImageWithTextSectionProps {
   title: string;
   description: string;
   buttonText: string;
-  buttonOnClick?: () => void;
   imageComponent: React.ReactNode;
   imageOnLeft?: boolean;
   reverseColumnOnMobile?: boolean;
@@ -22,7 +21,6 @@ const ImageWithTextSection: React.FC<ImageWithTextSectionProps> = ({
   title,
   description,
   buttonText,
-  buttonOnClick,
   imageComponent,
   imageOnLeft = false,
   reverseColumnOnMobile,
@@ -55,7 +53,12 @@ const ImageWithTextSection: React.FC<ImageWithTextSectionProps> = ({
           </p>
           <div className="mt-8">
             <Button
-              onClick={buttonOnClick}
+              onClick={() =>
+                window.open(
+                  "https://my.assexmarkets.com/auth/register",
+                  "_blank"
+                )
+              }
               text={buttonText}
               icon={<WhiteFlameButtonIcon />}
               variant="primary"

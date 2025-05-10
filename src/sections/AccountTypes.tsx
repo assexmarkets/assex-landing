@@ -5,6 +5,7 @@ import {
   StandardIcon,
   ProIcon,
   GiftIcon,
+  RawSpreadIcon,
 } from "../../public/icons/AccountTypesIcons";
 import { motion } from "framer-motion";
 import { PlanCard } from "@/components/PlanCard";
@@ -61,45 +62,43 @@ const AccountTypes = () => {
               {index === 0 && (
                 <PlanCard
                   title="Standard"
-                  description="Suits all trading styles and designed for all types of traders"
+                  description="Straightforward account with great leverage and zero swaps"
                   icon={<StandardIcon />}
                   benefits={[
-                    "Forex, metals, cryptocurrencies, energies and indices",
-                    "Leverage Up to 1:500",
-                    "Spread from 0.2 pips",
-                    "Minimum Deposit $1",
-                    "Minimum Trade size 0.01lots",
+                    "Spread: 0",
+                    "Minimum Deposit: $1",
+                    "Leverage: 1:200",
+                    "Swap: 0",
+                    "Minimum Trade: 0.01 lot",
                   ]}
                 />
               )}
               {index === 1 && (
                 <PlanCard
-                  title="Pro"
-                  description="Zero commission and ultra low spread account designed for instant execution"
+                  title="Leverage Plus"
+                  description="Enjoy zero spreads and unlimited leverage with a minimum deposit of just $1"
                   icon={<ProIcon />}
                   isPro
                   benefits={[
-                    "Forex, metals, cryptocurrencies, energies and indices",
-                    "Leverage Up to 1:100",
-                    "Spread from 0.1 pips",
-                    "Minimum Deposit $500",
-                    "Minimum Trade size 0.01lots",
-                    "No commission",
+                    "Spread: 0",
+                    "Minimum Deposit: $1",
+                    "Leverage: Unlimited",
+                    "Swap: 0",
+                    "Minimum Trade: 0.01 lot",
                   ]}
                 />
               )}
               {index === 2 && (
                 <PlanCard
                   title="Raw Spread"
-                  description="Lowest spreads with fixed commission per lot"
-                  icon={<ProIcon />}
+                  description="Best-in-class leverage and raw spreads for high-volume traders"
+                  icon={<RawSpreadIcon />}
                   benefits={[
-                    "Forex, metals, cryptocurrencies, energies and indices",
-                    "Leverage Up to 1:100",
-                    "Spread from 3 pips",
-                    "Minimum Deposit $500",
-                    "Minimum Trade size 0.01lots",
-                    "Commission up to $3.50 each side lot",
+                    "Spread: 0",
+                    "Minimum Deposit: $1",
+                    "Leverage: 1:500",
+                    "Swap: 0",
+                    "Minimum Trade: 0.01 lot",
                   ]}
                 />
               )}
