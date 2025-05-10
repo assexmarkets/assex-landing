@@ -50,7 +50,7 @@ const TradingPageCTA: React.FC<TradingPageCTAProps> = ({
   const imageHeight = isDemoPage ? 346 : 390;
 
   return (
-    <section className="px-6 md:px-8 relative w-full bg-[#1f0d3f] pb-12 xl:pb-4 pt-8 overflow-hidden">
+    <section className="px-6 md:px-8 relative w-full bg-[#1f0d3f] pb-12 xl:pb-0 pt-8 overflow-hidden">
       {/* Grid Background */}
       <div
         className={cn(
