@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Assexmarkets",
     images: [
       {
-        url: "https://assexmarkets.com/assexxlogo.webp",
+        url: "/assets/assexxlogo.png",
         width: 1200,
         height: 630,
         alt: "Assexmarkets preview image",
@@ -41,14 +41,14 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title:
       "Assexmarkets Global - Ultra fast & precise execution | Forex Broker",
     description:
       "ASM (Assexmarkets) is licensed global broker, providing trading services & facilities to both retail & institutional traders",
     images: [
       {
-        url: "https://assexmarkets.com/assexxlogo.webp",
+        url: "/assets/assexxlogo.png",
         alt: "Assexmarkets logo",
       },
     ],
@@ -63,14 +63,44 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        {/* ✅ Custom meta tags that can't go in `metadata` */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-32x32.png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-16x16.png"
+          sizes="16x16"
+        />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/android-chrome-192x192.png"
+          sizes="192x192"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/android-chrome-512x512.png"
+          sizes="512x512"
+        />
         <meta
           name="googlebot"
           content="index, nofollow, noimageindex, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
         />
-        <meta name="twitter:image:height" content="50" />
-        <meta name="twitter:image:width" content="50" />
-        <meta name="next-size-adjust" />
+        <meta name="robots" content="index,follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <meta name="twitter:image:width" content="1200" />
+        <meta name="twitter:image:height" content="630" />
+        <meta name="twitter:image:type" content="image/png" />
+        <meta name="twitter:image" content="/assets/assexxlogo.png" />
+        <meta name="next-size-adjust" /> */}
       </Head>
       <body
         className={`${interFont.variable} ${spaceGroteskFont.variable} antialiased`}

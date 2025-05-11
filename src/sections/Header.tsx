@@ -32,7 +32,7 @@ export default function Header() {
       <div className="w-full mx-auto px-8 md:px-20">
         <div className="flex items-center justify-between p-2.5 rounded-xl backdrop-blur-lg relative">
           {/* Logo and Hamburger for mobile/tablet */}
-          <div className="flex items-center justify-between w-full xl:hidden">
+          <div className="flex items-center justify-between w-full mobile-header">
             <Link href="/" className="flex items-center">
               <Image
                 src={"/images/logo.svg"}
@@ -47,7 +47,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navbar for lg+ screens */}
-          <div className="hidden xl:flex items-center justify-between w-full">
+          <div className="hidden desktop-header items-center justify-between w-full">
             {/* Logo for Desktop */}
             <Link href="/" className="flex items-center">
               <Image

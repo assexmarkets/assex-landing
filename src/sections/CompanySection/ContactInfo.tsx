@@ -25,12 +25,12 @@ const ContactInfo = () => {
             />
 
             {/* Vertical Divider (desktop only) */}
-            <div className="hidden sm:block w-px bg-gray-300 opacity-30 h-24" />
+            {/* <div className="hidden sm:block w-px bg-gray-300 opacity-30 h-24" /> */}
 
             {/** Phone Block */}
             <ContactBlock
               title="Phone Number"
-              contact="+234 7069664193"
+              contact="+44 7418366311"
               note="Assistance hours: Monday - Friday, 6 AM to 8 PM WAT"
             />
           </div>

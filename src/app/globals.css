@@ -44,6 +44,20 @@
   .section-padding {
     @apply px-6 md:px-8 mt-20 lg:mt-30;
   }
+
+  @media (min-width: 1240px) {
+    .desktop-header {
+      display: flex;
+    }
+
+    .mobile-header {
+      display: none;
+    }
+
+    .section-padding {
+      margin-top: 140px; /* override lg:mt-30 at 1200px */
+    }
+  }
 }
 
 /* @media (prefers-color-scheme: dark) {
