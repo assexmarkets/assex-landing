@@ -44,7 +44,7 @@ const PaymentMethods = () => {
         </div>
 
         {/* Main Card */}
-        <div className="relative bg-[#1f0e3f] text-white rounded-[32px] sm:rounded-[40px] md:rounded-[48px] p-8 pb-28 lg:pb-20 md:p-12 lg:p-16 flex flex-col lg:flex-row justify-between items-center overflow-visible">
+        <div className="relative bg-[#1f0e3f] text-white rounded-[32px] sm:rounded-[40px] md:rounded-[48px] p-8 lg:pb-20 md:p-12 lg:p-16 flex flex-col lg:flex-row justify-between items-center overflow-visible">
           {/* Grid background */}
           <div
             className={cn(

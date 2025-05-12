@@ -59,6 +59,7 @@ const footerLinks = [
       { name: "Currency Converter", href: "/currency-converter" },
       { name: "User Agreement", href: "/user-agreement" },
       { name: "Imprint Risk Disclosure", href: "/risk-disclosure" },
+      { name: "Frequently Asked Questions", href: "/faqs" },
     ],
   },
 ];
