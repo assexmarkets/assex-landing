@@ -57,9 +57,9 @@ const footerLinks = [
     links: [
       { name: "Trading Calculator", href: "/trading-calculator" },
       { name: "Currency Converter", href: "/currency-converter" },
+      { name: "FAQs", href: "/faqs" },
       { name: "User Agreement", href: "/user-agreement" },
       { name: "Imprint Risk Disclosure", href: "/risk-disclosure" },
-      { name: "Frequently Asked Questions", href: "/faqs" },
     ],
   },
 ];
