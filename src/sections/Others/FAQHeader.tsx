@@ -11,7 +11,7 @@ type FAQHeaderProps = {
 
 const FAQHeader = ({ searchTerm, setSearchTerm }: FAQHeaderProps) => {
   return (
-    <section className="bg-[rgba(0,204,177,0.02)] px-6 sm:px-10 md:px-12 lg:px-20 pt-12 lg:pt-24">
+    <section className="bg-[rgba(0,204,177,0.02)] px-6 sm:px-10 md:px-8 pt-12 lg:pt-24">
       <div className="mx-auto flex flex-col lg:flex-row items-center justify-between lg:gap-x-12 max-w-7xl">
         {/* Left Content */}
         <motion.div
