@@ -1,8 +1,10 @@
 import React from "react";
-import LoadingPage from "../loading";
+// import LoadingPage from "../loading";
+// import NotFoundPage from "../not-found";
+import ServerErrorPage from "../error";
 
 const TestingPage = () => {
-  return <LoadingPage />;
+  return <ServerErrorPage />;
 };
 
 export default TestingPage;

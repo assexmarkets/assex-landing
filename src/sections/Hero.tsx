@@ -1,95 +1,95 @@
-// "use client";
+"use client";
 
-// import React from "react";
-// import Image from "next/image";
-// import { motion } from "framer-motion";
-// import Button from "@/components/Button";
-// import {
-//   VideoButtonIcon,
-//   WhiteFlameButtonIcon,
-// } from "../../public/icons/ButtonIcons";
-// import { ShootingStars } from "@/components/ui/shooting-stars";
-// import { StarsBackground } from "@/components/ui/star-background";
-// import { FlipWords } from "@/components/ui/flip-words";
-// import { usePathname } from "next/navigation";
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Button from "@/components/Button";
+import {
+  VideoButtonIcon,
+  WhiteFlameButtonIcon,
+} from "../../public/icons/ButtonIcons";
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/star-background";
+import { FlipWords } from "@/components/ui/flip-words";
+import { usePathname } from "next/navigation";
 
-// const Hero = () => {
-//   const pathname = usePathname();
-//   const words = ["Best", "Optimal", "Ideal", "Winning", "Leading"];
+const Hero = () => {
+  const pathname = usePathname();
+  const words = ["Best", "Optimal", "Ideal", "Winning", "Leading"];
 
-//   return (
-//     <section
-//       key={pathname}
-//       className="relative min-h-fit bg-[#00CCB1]/3 text-[#1f0e3f] overflow-hidden flex flex-col justify-start pt-[100px] md:pt-[160px] lg:pt-[180px]"
-//     >
-//       <ShootingStars />
-//       <StarsBackground />
+  return (
+    <section
+      key={pathname}
+      className="relative min-h-fit bg-[#00CCB1]/3 text-[#1f0e3f] overflow-hidden flex flex-col justify-start pt-[100px] md:pt-[160px] lg:pt-[180px]"
+    >
+      <ShootingStars />
+      <StarsBackground />
 
-//       {/* Content */}
-//       <div className="relative z-10 container mx-auto px-4 text-center">
-//         <motion.h1
-//           initial={{ opacity: 0, y: 50 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//           transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
-//           className="font-secondary font-bold tracking-tight mx-auto leading-loose"
-//           style={{
-//             fontSize: "clamp(1.25rem, 3vw, 40px)",
-//             maxWidth: "1080px",
-//           }}
-//         >
-//           With
-//           <span className="inline-block text-[#0dae94]">
-//             <FlipWords words={words} />
-//             Market
-//           </span>{" "}
-//           Conditions, Trade With{" "}
-//           <span className="text-[#0dae94]">Low Latency</span> and{" "}
-//           <span className="text-[#0dae94]">Tight Spread</span>
-//         </motion.h1>
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4 text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
+          className="font-secondary font-bold tracking-tight mx-auto leading-loose"
+          style={{
+            fontSize: "clamp(1.25rem, 3vw, 40px)",
+            maxWidth: "1080px",
+          }}
+        >
+          With
+          <span className="inline-block text-[#0dae94]">
+            <FlipWords words={words} />
+            Market
+          </span>{" "}
+          Conditions, Trade With{" "}
+          <span className="text-[#0dae94]">Low Latency</span> and{" "}
+          <span className="text-[#0dae94]">Tight Spread</span>
+        </motion.h1>
 
-//         {/* Buttons */}
-//         <motion.div
-//           initial={{ opacity: 0, y: 20 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//           transition={{ delay: 0.6, duration: 0.5 }}
-//           className="mt-8 md:mt-12 flex flex-wrap justify-center gap-4 sm:gap-6 z-20"
-//         >
-//           <Button
-//             variant="primary"
-//             icon={<WhiteFlameButtonIcon />}
-//             text="Create a Live Account"
-//             size="sm"
-//             onClick={() =>
-//               window.open("https://my.assexmarkets.com/auth/register", "_blank")
-//             }
-//           />
-//           <Button
-//             variant="ghost"
-//             icon={<VideoButtonIcon />}
-//             text="Try a Free Demo"
-//             size="sm"
-//             onClick={() =>
-//               window.open("https://my.assexmarkets.com/auth/register", "_blank")
-//             }
-//           />
-//         </motion.div>
-//       </div>
+        {/* Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.5 }}
+          className="mt-8 md:mt-12 flex flex-wrap justify-center gap-4 sm:gap-6 z-20"
+        >
+          <Button
+            variant="primary"
+            icon={<WhiteFlameButtonIcon />}
+            text="Create a Live Account"
+            size="sm"
+            onClick={() =>
+              window.open("https://my.assexmarkets.com/auth/register", "_blank")
+            }
+          />
+          <Button
+            variant="ghost"
+            icon={<VideoButtonIcon />}
+            text="Try a Free Demo"
+            size="sm"
+            onClick={() =>
+              window.open("https://my.assexmarkets.com/auth/register", "_blank")
+            }
+          />
+        </motion.div>
+      </div>
 
-//       {/* Hero Image */}
-//       <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[661px] -mt-16 sm:-mt-24 z-0">
-//         <Image
-//           src="/gifs/hero24.gif"
-//           alt="Hero background"
-//           fill
-//           className="object-cover pointer-events-none select-none"
-//           priority
-//         />
-//       </div>
-//     </section>
-//   );
-// };
+      {/* Hero Image */}
+      <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[661px] -mt-16 sm:-mt-24 z-0">
+        <Image
+          src="/images/herobgImage.png"
+          alt="Hero background"
+          fill
+          className="object-cover pointer-events-none select-none"
+          priority
+        />
+      </div>
+    </section>
+  );
+};
 
-// export default Hero;
+export default Hero;
 
 // "use client";
 
@@ -185,100 +185,100 @@
 
 // export default Hero;
 
-"use client";
+// "use client";
 
-import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import Button from "@/components/Button";
-import {
-  VideoButtonIcon,
-  WhiteFlameButtonIcon,
-} from "../../public/icons/ButtonIcons";
-import { ShootingStars } from "@/components/ui/shooting-stars";
-import { StarsBackground } from "@/components/ui/star-background";
-import { FlipWords } from "@/components/ui/flip-words";
-import { usePathname } from "next/navigation";
+// import React from "react";
+// import Image from "next/image";
+// import { motion } from "framer-motion";
+// import Button from "@/components/Button";
+// import {
+//   VideoButtonIcon,
+//   WhiteFlameButtonIcon,
+// } from "../../public/icons/ButtonIcons";
+// import { ShootingStars } from "@/components/ui/shooting-stars";
+// import { StarsBackground } from "@/components/ui/star-background";
+// import { FlipWords } from "@/components/ui/flip-words";
+// import { usePathname } from "next/navigation";
 
-const Hero = () => {
-  const pathname = usePathname();
-  const words = ["Best", "Optimal", "Ideal", "Winning", "Leading"];
+// const Hero = () => {
+//   const pathname = usePathname();
+//   const words = ["Best", "Optimal", "Ideal", "Winning", "Leading"];
 
-  return (
-    <section
-      key={pathname}
-      className="relative min-h-fit bg-[#00CCB1]/3 text-[#1f0e3f] overflow-hidden flex flex-col justify-start pt-[100px] md:pt-[160px] lg:pt-[180px]"
-    >
-      <ShootingStars />
-      <StarsBackground />
+//   return (
+//     <section
+//       key={pathname}
+//       className="relative min-h-fit bg-[#00CCB1]/3 text-[#1f0e3f] overflow-hidden flex flex-col justify-start pt-[100px] md:pt-[160px] lg:pt-[180px]"
+//     >
+//       <ShootingStars />
+//       <StarsBackground />
 
-      {/* Background GIF Overlay */}
-      <div className="absolute inset-0 z-0 h-[780px] md:h-[900px] lg:h-[961px]">
-        <Image
-          src="/gifs/hero24.gif"
-          alt="Hero animation background"
-          fill
-          className="object-cover w-full h-full pointer-events-none select-none"
-          priority
-          quality={100}
-          unoptimized
-        />
-      </div>
+//       {/* Background GIF Overlay */}
+//       <div className="absolute inset-0 z-0 h-[780px] md:h-[900px] lg:h-[961px]">
+//         <Image
+//           src="/gifs/hero24.gif"
+//           alt="Hero animation background"
+//           fill
+//           className="object-cover w-full h-full pointer-events-none select-none"
+//           priority
+//           quality={100}
+//           unoptimized
+//         />
+//       </div>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
-        <motion.h1
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
-          className="font-secondary font-bold tracking-tight mx-auto leading-loose"
-          style={{
-            fontSize: "clamp(1.25rem, 3vw, 40px)",
-            maxWidth: "1080px",
-          }}
-        >
-          With
-          <span className="inline-block text-[#0dae94]">
-            <FlipWords words={words} />
-            Market
-          </span>{" "}
-          Conditions, Trade With{" "}
-          <span className="text-[#0dae94]">Low Latency</span> and{" "}
-          <span className="text-[#0dae94]">Tight Spread</span>
-        </motion.h1>
+//       {/* Content */}
+//       <div className="relative z-10 container mx-auto px-4 text-center">
+//         <motion.h1
+//           initial={{ opacity: 0, y: 50 }}
+//           whileInView={{ opacity: 1, y: 0 }}
+//           transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
+//           className="font-secondary font-bold tracking-tight mx-auto leading-loose"
+//           style={{
+//             fontSize: "clamp(1.25rem, 3vw, 40px)",
+//             maxWidth: "1080px",
+//           }}
+//         >
+//           With
+//           <span className="inline-block text-[#0dae94]">
+//             <FlipWords words={words} />
+//             Market
+//           </span>{" "}
+//           Conditions, Trade With{" "}
+//           <span className="text-[#0dae94]">Low Latency</span> and{" "}
+//           <span className="text-[#0dae94]">Tight Spread</span>
+//         </motion.h1>
 
-        {/* Buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
-          className="mt-8 md:mt-12 flex flex-wrap justify-center gap-4 sm:gap-6 z-20"
-        >
-          <Button
-            variant="primary"
-            icon={<WhiteFlameButtonIcon />}
-            text="Create a Live Account"
-            size="sm"
-            onClick={() =>
-              window.open("https://my.assexmarkets.com/auth/register", "_blank")
-            }
-          />
-          <Button
-            variant="ghost"
-            icon={<VideoButtonIcon />}
-            text="Try a Free Demo"
-            size="sm"
-            onClick={() =>
-              window.open("https://my.assexmarkets.com/auth/register", "_blank")
-            }
-          />
-        </motion.div>
-      </div>
+//         {/* Buttons */}
+//         <motion.div
+//           initial={{ opacity: 0, y: 20 }}
+//           whileInView={{ opacity: 1, y: 0 }}
+//           transition={{ delay: 0.6, duration: 0.5 }}
+//           className="mt-8 md:mt-12 flex flex-wrap justify-center gap-4 sm:gap-6 z-20"
+//         >
+//           <Button
+//             variant="primary"
+//             icon={<WhiteFlameButtonIcon />}
+//             text="Create a Live Account"
+//             size="sm"
+//             onClick={() =>
+//               window.open("https://my.assexmarkets.com/auth/register", "_blank")
+//             }
+//           />
+//           <Button
+//             variant="ghost"
+//             icon={<VideoButtonIcon />}
+//             text="Try a Free Demo"
+//             size="sm"
+//             onClick={() =>
+//               window.open("https://my.assexmarkets.com/auth/register", "_blank")
+//             }
+//           />
+//         </motion.div>
+//       </div>
 
-      {/* Spacer for height */}
-      <div className="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[661px] -mt-16 sm:-mt-24" />
-    </section>
-  );
-};
+//       {/* Spacer for height */}
+//       <div className="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[661px] -mt-16 sm:-mt-24" />
+//     </section>
+//   );
+// };
 
-export default Hero;
+// export default Hero;

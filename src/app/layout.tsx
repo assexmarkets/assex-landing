@@ -6,6 +6,7 @@ import Footer from "@/sections/Footer";
 import { MenuContextProvider } from "@/context/MobileMenuContext";
 import MobileMenu from "@/components/MobileMenu";
 import Head from "next/head";
+import Script from "next/script";
 
 const interFont = Inter({
   subsets: ["latin"],
@@ -114,6 +115,20 @@ export default function RootLayout({
             <Footer />
           </>
         </MenuContextProvider>
+        {/* ✅ Zoho SalesIQ Inline Script */}
+        <Script id="zoho-init" strategy="beforeInteractive">
+          {`
+      window.$zoho = window.$zoho || {};
+      $zoho.salesiq = $zoho.salesiq || { ready: function() {} };
+    `}
+        </Script>
+
+        {/* ✅ Zoho SalesIQ External Script */}
+        <Script
+          id="zsiqscript"
+          src="https://salesiq.zoho.com/widget?wc=siq97000700e5d0b31e9ee720e4a24a79a0f46645be67d2ca5ade4cdbca3a41edd1"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
