@@ -115,7 +115,7 @@ export default function MobileMenu() {
 
           <div className="p-6 flex flex-col gap-5">
             <a
-              href="https://assexmarkets.com/auth/register"
+              href="https://my.assexmarkets.com/auth/register"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpened(false)}
@@ -126,7 +126,7 @@ export default function MobileMenu() {
             </a>
 
             <a
-              href="https://assexmarkets.com/auth/login"
+              href="https://my.assexmarkets.com/auth/login"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpened(false)}

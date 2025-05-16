@@ -61,7 +61,10 @@ const ForexBenefits = () => {
               text="Try a Free Demo"
               variant="ghost"
               onClick={() =>
-                window.open("https://my.assexmarkets.com/auth/login", "_blank")
+                window.open(
+                  "https://my.assexmarkets.com/auth/register",
+                  "_blank"
+                )
               }
             />
           </div>
