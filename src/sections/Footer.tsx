@@ -41,7 +41,7 @@ const footerLinks = [
   },
   {
     title: "Platform",
-    links: [{ name: "Metatrader 5", href: "/metatrader-5" }],
+    links: [{ name: "Metatrader 5", href: "/metatrader5" }],
   },
   {
     title: "Company",
