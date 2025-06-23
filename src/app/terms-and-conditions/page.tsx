@@ -75,7 +75,12 @@ const terms = [
       "These Terms shall be governed by and construed in accordance with the laws of e.g., South Africa, without regard to its conflict of laws principles.",
   },
   {
-    title: "15. Contact Information",
+    title: "15. Prohibition of High‑Frequency and Automated Trading",
+    content:
+      "AssexMarkets strictly prohibits the use of high‑frequency trading (HFT) strategies, bots, or any other form of automated trading on our platform. Any trading account found engaging in such activity will be permanently blocked, and all trading profits derived from the use of automated systems will be forfeited.",
+  },
+  {
+    title: "16. Contact Information",
     content:
       "If you have any questions about these Terms or our Services, please contact us at:\nAssexMarkets Support Team\nEmail: support@assexmarkets.com\nWebsite: assexmarkets.com",
   },
