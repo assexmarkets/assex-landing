@@ -18,6 +18,7 @@ const footerLinks = [
       },
       { name: "Copy Trading", href: "/copy-trading" },
       { name: "Trading Contest", href: "/trading-contest" },
+      { name: "Tournament", href: "/tournament" },
       { name: "Percentage Allocation Asset Management (PAMM)", href: "/paam" },
     ],
   },
