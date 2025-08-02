@@ -338,7 +338,7 @@ export const WhyChooseTournament = () => {
               transition={{ duration: 0.5 }}
             >
               <div className="absolute -inset-1 bg-gradient-to-r from-lime-400 to-emerald-400 rounded-full blur opacity-30 animate-pulse"></div>
-              <div className="relative inline-flex items-center bg-gradient-to-r from-lime-50 to-emerald-50 border border-lime-200 text-emerald-700 px-6 py-3 rounded-full text-sm font-semibold shadow-sm">
+              <div className="relative inline-flex items-center bg-gradient-to-r from-lime-50 to-emerald-50 border border-lime-200 text-emerald-700 px-6 py-3 rounded-full text-sm font-secondary font-semibold shadow-sm">
                 <div className="absolute -top-1 -right-1 flex h-3 w-3">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-lime-500"></span>
