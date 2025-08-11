@@ -93,8 +93,8 @@ export function StepsSection() {
                 <Image
                   src={step.image}
                   alt={step.title}
-                  layout="fill"
-                  objectFit="contain"
+                  fill
+                  style={{ objectFit: "contain" }}
                   className="rounded-2xl"
                 />
               </div>
