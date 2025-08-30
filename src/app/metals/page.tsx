@@ -9,11 +9,11 @@ import MetalTrading from "@/sections/MarketPagesSection/MetalTrading";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 
-export const metadata = {
-  title: "Metals Trading | Assex Markets",
-  description:
-    "Trade precious metals like gold and silver with Assex Markets. Diversify your portfolio and hedge risks with our powerful trading tools.",
-};
+// export const metadata = {
+//   title: "Metals Trading | Assex Markets",
+//   description:
+//     "Trade precious metals like gold and silver with Assex Markets. Diversify your portfolio and hedge risks with our powerful trading tools.",
+// };
 const myFaqs: FAQItem[] = [
   {
     question: "What metals can I trade on AssexMarkets?",

@@ -3,11 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export const metadata = {
-  title: "Terms and Conditions | Assex Markets",
-  description:
-    "Terms and Conditions for AssexMarkets. By using our services, you agree to these terms and conditions.",
-};
+// export const metadata = {
+//   title: "Terms and Conditions | Assex Markets",
+//   description:
+//     "Terms and Conditions for AssexMarkets. By using our services, you agree to these terms and conditions.",
+// };
 
 const terms = [
   {

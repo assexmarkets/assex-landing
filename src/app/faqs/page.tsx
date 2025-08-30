@@ -5,11 +5,11 @@ import FAQSection from "@/sections/Others/QuestionsSection";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import { faqData } from "@/constants";
 
-export const metadata = {
-  title: "FAQs | Assex Markets",
-  description:
-    "Find answers to common questions about trading, accounts, deposits, withdrawals, and more in Assex Markets’ FAQs section.",
-};
+// export const metadata = {
+//   title: "FAQs | Assex Markets",
+//   description:
+//     "Find answers to common questions about trading, accounts, deposits, withdrawals, and more in Assex Markets’ FAQs section.",
+// };
 
 const FAQ = () => {
   const [searchTerm, setSearchTerm] = useState("");

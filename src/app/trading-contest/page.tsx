@@ -7,11 +7,11 @@ import WhatSection from "@/sections/TradingContest/WhatSection";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 
-export const metadata = {
-  title: "Trading Contest | Assex Markets",
-  description:
-    "Participate in Assex Markets’ trading contests. Test your skills, compete with traders, and win big rewards.",
-};
+// export const metadata = {
+//   title: "Trading Contest | Assex Markets",
+//   description:
+//     "Participate in Assex Markets’ trading contests. Test your skills, compete with traders, and win big rewards.",
+// };
 
 const myFaqs: FAQItem[] = [
   {

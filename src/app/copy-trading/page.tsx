@@ -9,11 +9,11 @@ import CopyTradingTypes from "@/sections/TradingPagesSection/CopyTradingTypes";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 
-export const metadata = {
-  title: "Copy Trading | Assex Markets",
-  description:
-    "Discover copy trading with Assex Markets. Follow top traders, replicate strategies automatically, and grow your portfolio effortlessly.",
-};
+// export const metadata = {
+//   title: "Copy Trading | Assex Markets",
+//   description:
+//     "Discover copy trading with Assex Markets. Follow top traders, replicate strategies automatically, and grow your portfolio effortlessly.",
+// };
 
 const myFaqs: FAQItem[] = [
   {

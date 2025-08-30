@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import FAQs, { FAQItem } from "@/sections/FAQs";
 import IndicesPageHeader from "@/sections/MarketPagesSection/IndicesHeader";
 import IndiceTrading from "@/sections/MarketPagesSection/IndicesTrading";
