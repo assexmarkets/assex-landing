@@ -6,6 +6,12 @@ import { CheckListIcon, GroupIcon } from "../../../public/icons/svgs";
 import ReusableBenefitsSection from "@/sections/TradingPagesSection/SimulatedBenefits";
 import DemoResponsiveSection from "@/sections/TradingPagesSection/SimulatedResponsiveSection";
 
+export const metadata = {
+  title: "Demo Account Trading | Assex Markets",
+  description:
+    "Start trading with a free demo account at Assex Markets. Practice strategies with virtual funds in real market conditions before going live.",
+};
+
 const benefitsData = [
   {
     icon: <GroupIcon />,

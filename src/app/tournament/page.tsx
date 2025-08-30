@@ -6,6 +6,12 @@ import TournamentPackages from "@/sections/Tournament/TournamentPackages";
 import { WhyChooseTournament } from "@/sections/Tournament/WhyChooseTournament";
 import React from "react";
 
+export const metadata = {
+  title: "Trading Tournament | Assex Markets",
+  description:
+    "Join Assex Markets’ exciting trading tournaments. Compete with global traders and win attractive prizes and rewards.",
+};
+
 const myFaqs: FAQItem[] = [
   {
     question: "How do I get started with the contest?",

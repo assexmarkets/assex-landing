@@ -6,6 +6,12 @@ import StandardTradingComparison from "@/sections/TradingPagesSection/StandardTr
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 
+export const metadata = {
+  title: "Standard Account | Assex Markets",
+  description:
+    "Open a Standard Account with Assex Markets. Ideal for beginners and professionals with competitive spreads and flexible trading.",
+};
+
 const myFaqs: FAQItem[] = [
   {
     question: "What instruments can I trade on the Cent account?",

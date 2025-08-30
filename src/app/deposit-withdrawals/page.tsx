@@ -6,6 +6,12 @@ import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import WhyChooseUs from "@/sections/TradingPagesSection/WhyChooseUs";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Deposits & Withdrawals | Assex Markets",
+  description:
+    "Fast, secure, and convenient deposits and withdrawals. Assex Markets offers multiple payment options to make trading simple and flexible.",
+};
+
 const myFaqs: FAQItem[] = [
   {
     question: "What are instant deposits and withdrawals?",

@@ -3,6 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+export const metadata = {
+  title: "Privacy Policy | Assex Markets",
+  description:
+    "Read Assex Markets’ privacy policy to understand how we protect your personal information and ensure data security.",
+};
 const privacyPolicy = [
   {
     title: "Introduction",

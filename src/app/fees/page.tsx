@@ -6,6 +6,11 @@ import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import Image from "next/image";
 import React from "react";
 
+export const metadata = {
+  title: "Trading Fees | Assex Markets",
+  description:
+    "Understand Assex Markets’ trading fees, spreads, commissions, and charges. Transparent pricing designed to benefit traders.",
+};
 const myFaqs: FAQItem[] = [
   {
     question: "Is AssexMarkets free to use?",

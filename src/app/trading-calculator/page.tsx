@@ -5,6 +5,12 @@ import TradingCalculatorResults from "@/sections/TradingPagesSection/TradingCalc
 import TradingCalculatorSteps from "@/sections/TradingPagesSection/TradingCalculatorSteps";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 
+export const metadata = {
+  title: "Trading Calculator | Assex Markets",
+  description:
+    "Use Assex Markets’ trading calculator to estimate margin, pip value, and profit/loss before placing trades.",
+};
+
 const myFaqs: FAQItem[] = [
   {
     question: "What is the Trading Calculator?",

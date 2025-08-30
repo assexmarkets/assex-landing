@@ -8,6 +8,11 @@ import CryptoWhyAssexMarket from "@/sections/MarketPagesSection/CryptoWhyAssexMa
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 
+export const metadata = {
+  title: "Crypto CFD Trading | Assex Markets",
+  description:
+    "Trade leading cryptocurrencies like Bitcoin, Ethereum, and more via CFDs on Assex Markets. Leverage opportunities with secure and fast execution.",
+};
 const myFaqs: FAQItem[] = [
   {
     question: "Is crypto trading volatile?",

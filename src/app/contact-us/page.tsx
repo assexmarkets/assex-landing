@@ -4,6 +4,11 @@ import ContactUsForm from "@/sections/ContactSection/ContactUsForm";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 
+export const metadata = {
+  title: "Contact Us | Assex Markets",
+  description:
+    "Get in touch with Assex Markets. Our support team is available 24/7 to help you with your trading, account, or platform-related queries.",
+};
 const ContactUsPage = () => {
   return (
     <>

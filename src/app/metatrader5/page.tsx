@@ -9,6 +9,12 @@ import MT5Header from "@/sections/PlatformSection/PlatformHeader";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 
+export const metadata = {
+  title: "MetaTrader 5 | Assex Markets",
+  description:
+    "Discover MetaTrader 5, the leading platform for trading on the forex market. Open a MetaTrader 5 account and start trading with ease.",
+};
+
 const myFaqs: FAQItem[] = [
   {
     question: "How do I download MetaTrader 5?",

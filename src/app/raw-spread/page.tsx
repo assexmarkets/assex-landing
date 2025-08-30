@@ -6,6 +6,12 @@ import FAQs, { FAQItem } from "@/sections/FAQs";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 
+export const metadata = {
+  title: "Raw Spread Trading | Assex Markets",
+  description:
+    "Access raw spreads with Assex Markets. Trade with near-zero spreads, high-speed execution, and transparent conditions.",
+};
+
 const myFaqs: FAQItem[] = [
   {
     question: "What is the Raw Spread Account?",

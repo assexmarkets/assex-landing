@@ -6,6 +6,11 @@ import FAQs, { FAQItem } from "@/sections/FAQs";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 
+export const metadata = {
+  title: "Leverage Plus | Assex Markets",
+  description:
+    "Maximize your trading opportunities with Assex Markets’ Leverage Plus. Tailored leverage options for experienced traders.",
+};
 const myFaqs: FAQItem[] = [
   {
     question: "What is the Leverage Plus Account?",

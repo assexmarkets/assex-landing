@@ -7,6 +7,12 @@ import Image from "next/image";
 import ReusableBenefitsSection from "@/sections/TradingPagesSection/SimulatedBenefits";
 import DemoResponsiveSection from "@/sections/TradingPagesSection/SimulatedResponsiveSection";
 
+export const metadata = {
+  title: "Live Account Trading | Assex Markets",
+  description:
+    "Open a live trading account with Assex Markets today. Access real markets, secure platforms, and a world of trading opportunities.",
+};
+
 const benefitsData = [
   {
     icon: <GroupIcon />,

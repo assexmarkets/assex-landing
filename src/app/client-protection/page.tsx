@@ -8,50 +8,11 @@ import { DualBulletPointSection } from "@/sections/TradingPagesSection/DualBulle
 import ProtectionSteps from "@/sections/TradingPagesSection/ProtectionSteps";
 
 export const metadata = {
-  title: "Client Protection | Secure Trading with AssexMarkets",
+  title: "Client Protection | Assex Markets",
   description:
-    "Trade with confidence knowing your funds and data are protected. AssexMarkets offers segregated accounts, advanced security measures, and regulatory compliance for safe trading.",
-  keywords:
-    "client protection, secure trading, fund safety, trading security, segregated accounts, regulated broker, trading platform security",
-  openGraph: {
-    title: "Client Protection | Secure Trading with AssexMarkets",
-    description:
-      "Trade with confidence knowing your funds and data are protected. AssexMarkets offers segregated accounts, advanced security measures, and regulatory compliance for safe trading.",
-    url: "https://www.assexmarkets.com/client-protection",
-    siteName: "AssexMarkets",
-    images: [
-      {
-        url: "https://www.assexmarkets.com/images/shieldImage.png",
-        width: 280,
-        height: 354,
-        alt: "AssexMarkets Client Protection and Security",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Client Protection | Secure Trading with AssexMarkets",
-    description:
-      "Trade with confidence knowing your funds and data are protected. AssexMarkets offers segregated accounts, advanced security measures, and regulatory compliance for safe trading.",
-    images: ["https://www.assexmarkets.com/images/shieldImage.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  alternates: {
-    canonical: "https://www.assexmarkets.com/client-protection",
-  },
+    "At Assex Markets, client protection is our top priority. Explore our safety measures, fund security, and risk management practices designed for traders.",
 };
+
 const myFaqs: FAQItem[] = [
   {
     question: "How does AssexMarkets protect my personal information?",

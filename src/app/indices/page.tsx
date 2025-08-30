@@ -8,6 +8,12 @@ import IndicesWhyAssexMarket from "@/sections/MarketPagesSection/IndicesWhyAssex
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 
+export const metadata = {
+  title: "Indices Trading | Assex Markets",
+  description:
+    "Trade stock indices with Assex Markets. Diversify your portfolio and reduce risk with our powerful trading tools.",
+};
+
 const myFaqs: FAQItem[] = [
   {
     question: "Is index trading volatile?",

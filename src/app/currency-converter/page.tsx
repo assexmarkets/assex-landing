@@ -4,6 +4,12 @@ import CurrencyConverter from "@/sections/TradingPagesSection/CurrencyConverter"
 import CurrencyConverterSteps from "@/sections/TradingPagesSection/CurrencyConverterSteps";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 
+export const metadata = {
+  title: "Currency Converter | Assex Markets",
+  description:
+    "Use Assex Markets’ free currency converter to check live exchange rates and calculate conversions for your trading needs instantly.",
+};
+
 const myFaqs: FAQItem[] = [
   {
     question: "What is the AssexMarkets Currency Converter?",

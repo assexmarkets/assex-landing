@@ -6,6 +6,12 @@ import PaamWhyOpen from "@/sections/TradingPagesSection/PaamWhyOpen";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 
+export const metadata = {
+  title: "PAAM Accounts | Assex Markets",
+  description:
+    "Invest with Assex Markets’ PAAM accounts. Let professional traders manage your portfolio while you enjoy passive returns.",
+};
+
 const myFaqs: FAQItem[] = [
   {
     question: "What is a PAAM account?",

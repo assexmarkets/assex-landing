@@ -8,6 +8,12 @@ import HowToStartForex from "@/sections/MarketPagesSection/HowToStartForex";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 
+export const metadata = {
+  title: "Forex CFD Trading | Assex Markets",
+  description:
+    "Trade Forex CFDs with Assex Markets. Access 60+ currency pairs, tight spreads, and advanced trading tools for professionals and beginners.",
+};
+
 const myFaqs: FAQItem[] = [
   {
     question: "How do I get started with forex trading?",
