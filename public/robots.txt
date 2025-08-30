@@ -1,0 +1,44 @@
+# robots.txt for AssexMarkets
+# This file tells search engine crawlers which pages they can and cannot request from your site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.assexmarkets.com/sitemap.xml
+
+# Block access to admin areas (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /temp/
+Disallow: /tmp/
+
+# Allow important pages for SEO
+Allow: /about-us
+Allow: /client-protection
+Allow: /commodities
+Allow: /contact-us
+Allow: /copy-trading
+Allow: /crypto-cfd
+Allow: /currency-converter
+Allow: /demo-account-trading
+Allow: /deposits-withdrawals
+Allow: /faqs
+Allow: /fees
+Allow: /forex-cfd
+Allow: /leverage-plus
+Allow: /live-account-trading
+Allow: /metals
+Allow: /metatrader5
+Allow: /paam
+Allow: /privacy
+Allow: /raw-spread
+Allow: /standard
+Allow: /terms-and-conditions
+Allow: /tournament
+Allow: /trading-calculator
+Allow: /trading-contest
+
+# Crawl delay (optional - only add if you want to limit crawler speed)
+# Crawl-delay: 1

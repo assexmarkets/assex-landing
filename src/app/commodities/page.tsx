@@ -6,6 +6,55 @@ import CommoditiesWhyAssexMarket from "@/sections/MarketPagesSection/Commodities
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 
+export const metadata = {
+  title:
+    "Commodities Trading | Trade Oil, Gas & Agricultural CFDs | AssexMarkets",
+  description:
+    "Trade commodities CFDs including Brent Crude Oil, WTI, Natural Gas, Wheat, and Corn with competitive spreads, flexible leverage, and advanced trading tools on AssexMarkets.",
+  keywords:
+    "commodities trading, oil trading, natural gas CFD, agricultural commodities, Brent crude oil, WTI trading, commodity CFDs, energy trading",
+  openGraph: {
+    title:
+      "Commodities Trading | Trade Oil, Gas & Agricultural CFDs | AssexMarkets",
+    description:
+      "Trade commodities CFDs including Brent Crude Oil, WTI, Natural Gas, Wheat, and Corn with competitive spreads, flexible leverage, and advanced trading tools on AssexMarkets.",
+    url: "https://www.assexmarkets.com/commodities",
+    siteName: "AssexMarkets",
+    images: [
+      {
+        url: "https://www.assexmarkets.com/images/commodities-trading.jpg", // You'll need to add this image
+        width: 1200,
+        height: 630,
+        alt: "Commodities Trading on AssexMarkets Platform",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Commodities Trading | Trade Oil, Gas & Agricultural CFDs | AssexMarkets",
+    description:
+      "Trade commodities CFDs including Brent Crude Oil, WTI, Natural Gas, Wheat, and Corn with competitive spreads, flexible leverage, and advanced trading tools on AssexMarkets.",
+    images: ["https://www.assexmarkets.com/images/commodities-trading.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://www.assexmarkets.com/commodities",
+  },
+};
+
 const myFaqs: FAQItem[] = [
   {
     question: "What commodities can I trade on AssexMarkets?",

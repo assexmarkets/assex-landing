@@ -11,13 +11,13 @@ import Script from "next/script";
 const interFont = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  weight: "variable",
+  display: "swap",
 });
 
 const spaceGroteskFont = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-space-grotesk",
-  weight: "variable",
+  display: "swap",
 });
 
 // SEO Metadata
@@ -60,21 +60,27 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  alternates: {
+    canonical: "https://www.assexmarkets.com",
+    languages: {
+      "en-US": "https://www.assexmarkets.com",
+      "en-GB": "https://www.assexmarkets.com/en-gb",
+      "fr-FR": "https://www.assexmarkets.com/fr",
+      "de-DE": "https://www.assexmarkets.com/de",
+      "es-ES": "https://www.assexmarkets.com/es",
+    },
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://www.assexmarkets.com",
     siteName: "Assexmarkets",
-    title: "Assexmarkets - Licensed Global Forex Broker | Ultra Fast Execution",
-    description:
-      "Trade forex, commodities & indices with Assexmarkets - a licensed global broker offering ultra-fast execution, competitive spreads, and professional trading platforms.",
     images: [
       {
         url: "/assets/assexxlogo.png",
         width: 1200,
         height: 630,
         alt: "Assexmarkets - Licensed Global Forex Broker",
-        type: "image/png",
       },
     ],
   },
@@ -82,18 +88,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@assexmarkets",
     creator: "@assexmarkets",
-    title: "Assexmarkets - Licensed Global Forex Broker | Ultra Fast Execution",
-    description:
-      "Trade forex, commodities & indices with Assexmarkets - a licensed global broker offering ultra-fast execution and competitive spreads.",
-    images: {
-      url: "/assets/assexxlogo.png",
-      alt: "Assexmarkets - Licensed Global Forex Broker",
-      width: 1200,
-      height: 630,
-    },
-  },
-  alternates: {
-    canonical: "https://www.assexmarkets.com",
+    images: ["/assets/assexxlogo.png"],
   },
   category: "finance",
   icons: {
@@ -115,15 +110,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
   manifest: "/site.webmanifest",
-  other: {
-    "msapplication-TileColor": "#1a1a1a",
-    "X-Content-Type-Options": "nosniff",
-    "X-Frame-Options": "DENY",
-    "X-XSS-Protection": "1; mode=block",
-  },
 };
 
-// Viewport settings
+// Viewport
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -137,13 +126,56 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* JSON-LD: Organization & Breadcrumbs */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "Assexmarkets",
+                url: "https://www.assexmarkets.com",
+                logo: "https://www.assexmarkets.com/assets/assexxlogo.png",
+                sameAs: [
+                  "https://twitter.com/assexmarkets",
+                  "https://www.linkedin.com/company/assexmarkets",
+                ],
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: "https://www.assexmarkets.com",
+                  },
+                ],
+              },
+            ]),
+          }}
+        />
+      </head>
       <body
         className={`${interFont.variable} ${spaceGroteskFont.variable} antialiased`}
       >
+        {/* Accessibility: Skip Link */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded"
+        >
+          Skip to main content
+        </a>
+
         <MenuContextProvider>
           <Header />
           <MobileMenu />
-          {children}
+          <main id="main-content" role="main">
+            {children}
+          </main>
           <Footer />
         </MenuContextProvider>
 
@@ -157,10 +189,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'AW-592679137', {
-              page_title: document.title,
-              page_location: window.location.href,
-            });
+            gtag('config', 'AW-592679137');
           `}
         </Script>
 
