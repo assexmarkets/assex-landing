@@ -29,63 +29,27 @@ export const metadata: Metadata = {
     template: "%s | Assexmarkets",
   },
   description:
-    "Assexmarkets - The world's first swap free, zero spread and zero commission system broker. Create a live account, Assexmarkets account registration page. Get Started",
+    "Assexmarkets: Swap-Free, Zero Spread, Zero Commission and unlimited leverage Forex Trading",
   keywords: [
     "assexmarkets",
     "zero spread trading",
-    "zero spread forex",
-    "no spread broker",
-    "zero swap accounts",
     "swap-free trading",
-    "islamic swap-free accounts",
-    "zero commission trading",
-    "commission-free broker",
-    "no commission forex",
-    "unlimited leverage",
+    "commission-free trading",
     "high leverage trading",
-    "infinite leverage broker",
-    "fast payments",
-    "quick withdrawals",
+    "fast withdrawals",
     "instant deposits",
-    "rapid payouts",
-    "cryptocurrency trading",
-    "crypto broker",
-    "bitcoin trading",
-    "ethereum trading",
-    "altcoin trading",
-    "crypto CFDs",
     "weekend trading",
     "24/7 trading",
-    "saturday sunday trading",
-    "non-stop markets",
     "forex broker",
     "online trading platform",
-    "CFD trading",
-    "financial markets",
     "low cost trading",
-    "zero fees trading",
-    "no hidden fees",
-    "leverage trading",
-    "margin trading",
-    "digital currency trading",
-    "crypto forex pairs",
-    "weekend crypto trading",
-    "fast execution trading",
     "secure trading platform",
     "reliable broker",
-    "best zero spread broker",
-    "top swap-free broker",
-    "unlimited leverage forex",
-    "fast payment broker",
-    "cryptocurrency exchange",
-    "weekend forex trading",
-    "zero spread system",
-    "zero swap system",
-    "zero commission system",
-    "trading with unlimited leverage",
-    "fast payment systems",
-    "crypto currency broker",
-    "weekend market access",
+    "crypto trading pairs",
+    "mobile trading",
+    "live account trading",
+    "demo trading",
+    "24/7 customer support",
   ],
   authors: [{ name: "Assexmarkets" }],
   creator: "Assexmarkets",
@@ -93,36 +57,18 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: false,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  alternates: {
-    canonical: "https://www.assexmarkets.com",
-    languages: {
-      "en-US": "https://www.assexmarkets.com",
-      "en-GB": "https://www.assexmarkets.com/en-gb",
-      "fr-FR": "https://www.assexmarkets.com/fr",
-      "de-DE": "https://www.assexmarkets.com/de",
-      "es-ES": "https://www.assexmarkets.com/es",
-    },
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.assexmarkets.com",
+    url: "https://assexmarkets.com",
     siteName: "Assexmarkets",
     title: "Assexmarkets - Licensed Global Forex Broker | Ultra Fast Execution",
     description:
-      "Assexmarkets - The world's first swap free, zero spread and zero commission system broker. Create a live account, Assexmarkets account registration page. Get Started",
+      "Assexmarkets: Swap-Free, Zero Spread, Zero Commission and unlimited leverage Forex Trading",
     images: [
       {
-        url: "https://assexmarkets.com/images/logo.svg",
+        url: "/assets/assexxlogo.png", // ✅ Local logo
         width: 1200,
         height: 630,
         alt: "Assexmarkets - Licensed Global Forex Broker",
@@ -135,8 +81,8 @@ export const metadata: Metadata = {
     creator: "@assexmarkets",
     title: "Assexmarkets - Licensed Global Forex Broker | Ultra Fast Execution",
     description:
-      "Assexmarkets - The world's first swap free, zero spread and zero commission system broker. Create a live account, Assexmarkets account registration page. Get Started",
-    images: ["https://assexmarkets.com/images/logo.svg"],
+      "Assexmarkets: Swap-Free, Zero Spread, Zero Commission and unlimited leverage Forex Trading",
+    images: ["/assets/assexxlogo.png"], // ✅ Local logo
   },
   category: "finance",
   icons: {
@@ -158,16 +104,6 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
   manifest: "/site.webmanifest",
-  // Additional SEO optimizations
-  other: {
-    "theme-color": "#1a1a1a",
-    "mobile-web-app-capable": "yes",
-    "apple-mobile-web-app-capable": "yes",
-    "apple-mobile-web-app-status-bar-style": "black-translucent",
-    "format-detection": "telephone=no",
-    "msapplication-TileColor": "#1a1a1a",
-    "msapplication-config": "/browserconfig.xml",
-  },
 };
 
 // Viewport
@@ -187,6 +123,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Required OG + Meta Overrides */}
+        <meta property="og:type" content="website" />
+        <meta
+          name="description"
+          content="Assexmarkets: Swap-Free, Zero Spread, Zero Commission and unlimited leverage Forex Trading"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="keywords"
+          content="assexmarkets, zero spread trading, swap-free trading, commission-free trading, high leverage trading, fast withdrawals, instant deposits, weekend trading, 24/7 trading, forex broker, online trading platform, low cost trading, secure trading platform, reliable broker, crypto trading pairs, mobile trading, live account trading, demo trading, 24/7 customer support"
+        />
+        <meta property="og:url" content="https://assexmarkets.com" />
+        <meta property="og:image" content="/assets/assexxlogo.png" />
+
         {/* JSON-LD: Enhanced Structured Data */}
         <script
           type="application/ld+json"
@@ -201,7 +151,7 @@ export default function RootLayout({
                 url: "https://www.assexmarkets.com",
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://assexmarkets.com/images/logo.svg",
+                  url: "https://assexmarkets.com/assets/assexxlogo.png", // ✅ Absolute path for structured data
                   width: 300,
                   height: 100,
                 },
@@ -288,7 +238,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* Additional Meta Tags for SEO */}
+        {/* Additional SEO + Performance */}
         <meta name="geo.region" content="Global" />
         <meta name="geo.placename" content="Worldwide" />
         <meta name="distribution" content="Global" />
@@ -296,7 +246,7 @@ export default function RootLayout({
         <meta name="referrer" content="origin-when-cross-origin" />
         <meta name="format-detection" content="telephone=no" />
 
-        {/* Preconnect to improve performance */}
+        {/* Preconnect */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -306,7 +256,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://salesiq.zoho.com" />
 
-        {/* DNS Prefetch for external resources */}
+        {/* DNS Prefetch */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//salesiq.zoho.com" />
