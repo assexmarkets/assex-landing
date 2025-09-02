@@ -24,12 +24,11 @@ const spaceGroteskFont = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.assexmarkets.com"),
   title: {
-    default:
-      "Assexmarkets - Licensed Global Forex Broker | Ultra Fast Execution",
+    default: "Assexmarkets - Global Forex Broker | Fast Execution",
     template: "%s | Assexmarkets",
   },
   description:
-    "Assexmarkets: Swap-Free, Zero Spread, Zero Commission and unlimited leverage Forex Trading",
+    "Experience Forex Trading with Assexmarkets: Enjoy Swap-Free, Zero Spread, Zero Commission, and Unlimited Leverage for Maximum Flexibility.",
   keywords: [
     "assexmarkets",
     "zero spread trading",
@@ -123,17 +122,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Required OG + Meta Overrides */}
-        <meta property="og:type" content="website" />
+        <title>Assexmarkets - Global Forex Broker | Fast Execution</title>
         <meta
           name="description"
-          content="Assexmarkets: Swap-Free, Zero Spread, Zero Commission and unlimited leverage Forex Trading"
+          content="Experience Forex Trading with Assexmarkets: Enjoy Swap-Free, Zero Spread, Zero Commission, and Unlimited Leverage for Maximum Flexibility."
         />
         <meta name="robots" content="index, follow" />
         <meta
           name="keywords"
           content="assexmarkets, zero spread trading, swap-free trading, commission-free trading, high leverage trading, fast withdrawals, instant deposits, weekend trading, 24/7 trading, forex broker, online trading platform, low cost trading, secure trading platform, reliable broker, crypto trading pairs, mobile trading, live account trading, demo trading, 24/7 customer support"
         />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://assexmarkets.com" />
         <meta property="og:image" content="/assets/assexxlogo.png" />
 
