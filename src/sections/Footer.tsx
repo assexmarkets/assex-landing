@@ -141,33 +141,63 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Disclaimer */}
-        <div className="space-y-4 text-xs leading-relaxed text-[#191a45]">
-          <p>
-            Assexmarkets Global Ltd is authorised by the Financial Services
-            Regulatory Authority (FSRA) in St. Lucia in compliance with the
-            (RATLA) IBC Act 12.14 section 10(5) with registration number
-            2024-00223 and a registered office of Assexmarkets Global Ltd is at
-            Ground Floor, The Sotheby Building, Rodney Bay, Gros-Islet, Saint
-            Lucia. P.O. Box 838, Castries, Saint Lucia.
-          </p>
-          <p>
-            <strong>Risk Warning:</strong> Trading Contracts for Difference
-            (CFDs) and other leveraged products involves significant risk of
-            loss and is not suitable for all investors. CFDs are complex
-            instruments and come with a high risk of losing money rapidly due to
-            leverage. You should carefully consider your investment objectives,
-            level of experience, and risk appetite before deciding to trade
-            CFDs. Do not invest more than you can afford to lose. Ensure you
-            fully understand the risks involved and seek independent financial
-            advice if necessary.
-          </p>
-          <p>
-            <strong>Disclaimer:</strong> Assexmarkets Global Ltd does not offer
-            services to US, Pakistan, Iraq, Iran, Uzbekistan, or any other
-            jurisdiction where such distribution or use would be contrary to
-            local law or regulation.
-          </p>
+        {/* Regulatory Information & Disclaimer */}
+        <div className="space-y-6 text-xs leading-relaxed text-[#191a45]">
+          {/* Regulatory Information Cards */}
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-white/30 rounded-lg p-4 border border-[#00CCB1]/20">
+              <h5 className="font-semibold text-[#191a45] mb-2 text-sm">
+                St. Lucia Registration
+              </h5>
+              <p>
+                Assexmarkets Global Ltd is authorised by the Financial Services
+                Regulatory Authority (FSRA) in St. Lucia in compliance with the
+                (RATLA) IBC Act 12.14 section 10(5) with registration number
+                <strong> 2024-00223</strong>. Registered office: Ground Floor,
+                The Sotheby Building, Rodney Bay, Gros-Islet, Saint Lucia. P.O.
+                Box 838, Castries, Saint Lucia.
+              </p>
+            </div>
+
+            <div className="bg-white/30 rounded-lg p-4 border border-[#00CCB1]/20">
+              <h5 className="font-semibold text-[#191a45] mb-2 text-sm">
+                Comoros Union Registration
+              </h5>
+              <p>
+                Assexmarkets Global Ltd is registered in Comoros Union with
+                registration IBC number <strong>HT00925090</strong>, regulated
+                by MISA (MWALI International Services Authority) with brokerage
+                license number <strong>BFX2025110</strong>. Registered office:
+                P.B. 1257 Bonovo Road – Fomboni, Island of Mohéli – Comoros
+                Union.
+              </p>
+            </div>
+          </div>
+
+          {/* Risk Warning */}
+          <div className="bg-amber-50/50 border border-amber-200/50 rounded-lg p-4">
+            <p>
+              <strong className="text-amber-800">Risk Warning:</strong> Trading
+              Contracts for Difference (CFDs) and other leveraged products
+              involves significant risk of loss and is not suitable for all
+              investors. CFDs are complex instruments and come with a high risk
+              of losing money rapidly due to leverage. You should carefully
+              consider your investment objectives, level of experience, and risk
+              appetite before deciding to trade CFDs. Do not invest more than
+              you can afford to lose. Ensure you fully understand the risks
+              involved and seek independent financial advice if necessary.
+            </p>
+          </div>
+
+          {/* Disclaimer */}
+          <div className="bg-red-50/50 border border-red-200/50 rounded-lg p-4">
+            <p>
+              <strong className="text-red-800">Disclaimer:</strong> Assexmarkets
+              Global Ltd does not offer services to US, Pakistan, Iraq, Iran,
+              Uzbekistan, or any other jurisdiction where such distribution or
+              use would be contrary to local law or regulation.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
