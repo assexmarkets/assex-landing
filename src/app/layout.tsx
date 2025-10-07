@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
-import "./globals.css";
 import Header from "@/sections/Header";
 import Footer from "@/sections/Footer";
 import { MenuContextProvider } from "@/context/MobileMenuContext";
 import MobileMenu from "@/components/MobileMenu";
 import Script from "next/script";
+import "./globals.css";
 
 // Google Fonts
 const interFont = Inter({
@@ -135,6 +135,8 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://assexmarkets.com" />
         <meta property="og:image" content="/assets/assexxlogo.png" />
+
+        <meta name="seobility" content="52765debc8aa72baa4d51011713b1b07" />
 
         {/* JSON-LD: Enhanced Structured Data */}
         <script
