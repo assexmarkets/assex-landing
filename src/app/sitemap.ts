@@ -124,7 +124,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
-      url: "https://www.assexmarkets.com/deposits-withdrawals",
+      url: "https://www.assexmarkets.com/deposit-withdrawals",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,

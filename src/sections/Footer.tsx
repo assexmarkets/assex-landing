@@ -33,11 +33,11 @@ const footerLinks = [
   {
     title: "Markets",
     links: [
-      { name: "Forex CFO", href: "/forex-cfo" },
-      { name: "Crypto CFO", href: "/crypto-cfo" },
+      { name: "Forex CFD", href: "/forex-cfd" },
+      { name: "Crypto CFD", href: "/crypto-cfd" },
       { name: "Indices", href: "/indices" },
       { name: "Metals", href: "/metals" },
-      { name: "Commodities CFO", href: "/commodities-cfo" },
+      { name: "Commodities", href: "/commodities" },
     ],
   },
   {
@@ -48,9 +48,9 @@ const footerLinks = [
     title: "Company",
     links: [
       { name: "About Us", href: "/about-us" },
-      { name: "Why AssexMarkets?", href: "/why-assexmarkets" },
+      // { name: "Why AssexMarkets?", href: "/why-assexmarkets" },
       { name: "Contact Us", href: "/contact-us" },
-      { name: "Help Center", href: "/help-center" },
+      // { name: "Help Center", href: "/help-center" },
     ],
   },
   {
@@ -59,8 +59,8 @@ const footerLinks = [
       { name: "Trading Calculator", href: "/trading-calculator" },
       { name: "Currency Converter", href: "/currency-converter" },
       { name: "FAQs", href: "/faqs" },
-      { name: "User Agreement", href: "/user-agreement" },
-      { name: "Imprint Risk Disclosure", href: "/risk-disclosure" },
+      // { name: "User Agreement", href: "/user-agreement" },
+      // { name: "Imprint Risk Disclosure", href: "/risk-disclosure" },
     ],
   },
 ];

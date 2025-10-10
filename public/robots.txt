@@ -23,7 +23,7 @@ Allow: /copy-trading
 Allow: /crypto-cfd
 Allow: /currency-converter
 Allow: /demo-account-trading
-Allow: /deposits-withdrawals
+Allow: /deposit-withdrawals
 Allow: /faqs
 Allow: /fees
 Allow: /forex-cfd
