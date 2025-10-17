@@ -8,6 +8,9 @@ export const metadata = {
   title: "Currency Converter | Assex Markets",
   description:
     "Use Assex Markets’ free currency converter to check live exchange rates and calculate conversions for your trading needs instantly.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/currency-converter",
+  },
 };
 
 const myFaqs: FAQItem[] = [

@@ -12,6 +12,9 @@ export const metadata = {
   title: "Forex CFD Trading | Assex Markets",
   description:
     "Trade Forex CFDs with Assex Markets. Access 60+ currency pairs, tight spreads, and advanced trading tools for professionals and beginners.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/forex-cfd",
+  },
 };
 
 const myFaqs: FAQItem[] = [

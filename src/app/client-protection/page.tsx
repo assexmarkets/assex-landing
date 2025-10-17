@@ -11,6 +11,9 @@ export const metadata = {
   title: "Client Protection | Assex Markets",
   description:
     "At Assex Markets, client protection is our top priority. Explore our safety measures, fund security, and risk management practices designed for traders.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/client-protection",
+  },
 };
 
 const myFaqs: FAQItem[] = [

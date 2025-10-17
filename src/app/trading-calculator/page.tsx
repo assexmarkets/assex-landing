@@ -9,6 +9,9 @@ export const metadata = {
   title: "Trading Calculator | Assex Markets",
   description:
     "Use Assex Markets’ trading calculator to estimate margin, pip value, and profit/loss before placing trades.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/trading-calculator",
+  },
 };
 
 const myFaqs: FAQItem[] = [

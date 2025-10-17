@@ -10,6 +10,9 @@ export const metadata = {
   title: "Raw Spread Trading | Assex Markets",
   description:
     "Access raw spreads with Assex Markets. Trade with near-zero spreads, high-speed execution, and transparent conditions.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/raw-spread",
+  },
 };
 
 const myFaqs: FAQItem[] = [

@@ -10,6 +10,9 @@ export const metadata = {
   title: "Demo Account Trading | Assex Markets",
   description:
     "Start trading with a free demo account at Assex Markets. Practice strategies with virtual funds in real market conditions before going live.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/demo-account-trading",
+  },
 };
 
 const benefitsData = [

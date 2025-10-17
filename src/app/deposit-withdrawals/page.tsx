@@ -10,6 +10,9 @@ export const metadata = {
   title: "Deposits & Withdrawals | Assex Markets",
   description:
     "Fast, secure, and convenient deposits and withdrawals. Assex Markets offers multiple payment options to make trading simple and flexible.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/deposit-withdrawals",
+  },
 };
 
 const myFaqs: FAQItem[] = [

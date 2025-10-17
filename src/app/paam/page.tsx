@@ -10,6 +10,9 @@ export const metadata = {
   title: "PAAM Accounts | Assex Markets",
   description:
     "Invest with Assex Markets’ PAAM accounts. Let professional traders manage your portfolio while you enjoy passive returns.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/paam",
+  },
 };
 
 const myFaqs: FAQItem[] = [

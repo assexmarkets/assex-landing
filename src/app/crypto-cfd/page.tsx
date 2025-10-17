@@ -12,6 +12,9 @@ export const metadata = {
   title: "Crypto CFD Trading | Assex Markets",
   description:
     "Trade leading cryptocurrencies like Bitcoin, Ethereum, and more via CFDs on Assex Markets. Leverage opportunities with secure and fast execution.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/crypto-cfd",
+  },
 };
 const myFaqs: FAQItem[] = [
   {

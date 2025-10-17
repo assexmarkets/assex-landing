@@ -1,45 +1,15 @@
-"use client";
-import React, { useMemo, useState } from "react";
-import FAQHeader from "@/sections/Others/FAQHeader";
-import FAQSection from "@/sections/Others/QuestionsSection";
-import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
-import { faqData } from "@/constants";
+import FAQ from "@/components/pageComponents/FAQs";
+import type { Metadata } from "next";
 
-// export const metadata = {
-//   title: "FAQs | Assex Markets",
-//   description:
-//     "Find answers to common questions about trading, accounts, deposits, withdrawals, and more in Assex Markets’ FAQs section.",
-// };
-
-const FAQ = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-
-  const filteredFaqData = useMemo(() => {
-    if (!searchTerm.trim()) return faqData;
-
-    const lowerSearch = searchTerm.toLowerCase();
-
-    return faqData
-      .map((section) => {
-        const filteredItems = section.items.filter(
-          (item) =>
-            item.question.toLowerCase().includes(lowerSearch) ||
-            item.answer.toLowerCase().includes(lowerSearch)
-        );
-
-        return filteredItems.length > 0
-          ? { ...section, items: filteredItems }
-          : undefined;
-      })
-      .filter((section) => section !== undefined);
-  }, [searchTerm]);
-  return (
-    <>
-      <FAQHeader searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <FAQSection data={filteredFaqData} />
-      <TradingPageCTA />
-    </>
-  );
+export const metadata: Metadata = {
+  title: "FAQs | Assex Markets",
+  description:
+    "Find answers to common questions about trading, accounts, deposits, withdrawals, and more in Assex Markets' FAQs section.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/faqs",
+  },
 };
 
-export default FAQ;
+export default function FAQPage() {
+  return <FAQ />;
+}

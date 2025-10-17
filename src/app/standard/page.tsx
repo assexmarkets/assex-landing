@@ -10,6 +10,9 @@ export const metadata = {
   title: "Standard Account | Assex Markets",
   description:
     "Open a Standard Account with Assex Markets. Ideal for beginners and professionals with competitive spreads and flexible trading.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/standard",
+  },
 };
 
 const myFaqs: FAQItem[] = [

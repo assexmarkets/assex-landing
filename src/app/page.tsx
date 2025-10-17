@@ -8,7 +8,14 @@ import { StepsSection } from "@/sections/GetStarted";
 import Hero from "@/sections/Hero";
 import PaymentMethods from "@/sections/PaymentMethods";
 import Testimonial from "@/sections/Testimonial";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://www.assexmarkets.com",
+  },
+};
 
 const Home = () => {
   return (

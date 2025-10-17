@@ -12,6 +12,9 @@ export const metadata = {
   title: "Indices Trading | Assex Markets",
   description:
     "Trade stock indices with Assex Markets. Diversify your portfolio and reduce risk with our powerful trading tools.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/indices",
+  },
 };
 
 const myFaqs: FAQItem[] = [

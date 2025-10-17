@@ -14,6 +14,9 @@ export const metadata = {
     description: "Trusted trading platform built for all traders worldwide.",
     url: "https://www.assexmarkets.com/about-us",
   },
+  alternates: {
+    canonical: "https://www.assexmarkets.com/about-us",
+  },
 };
 
 const AboutUsPage = () => {

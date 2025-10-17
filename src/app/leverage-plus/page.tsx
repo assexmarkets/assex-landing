@@ -10,6 +10,9 @@ export const metadata = {
   title: "Leverage Plus | Assex Markets",
   description:
     "Maximize your trading opportunities with Assex Markets’ Leverage Plus. Tailored leverage options for experienced traders.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/leverage-plus",
+  },
 };
 const myFaqs: FAQItem[] = [
   {

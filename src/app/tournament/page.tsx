@@ -10,6 +10,9 @@ export const metadata = {
   title: "Trading Tournament | Assex Markets",
   description:
     "Join Assex Markets’ exciting trading tournaments. Compete with global traders and win attractive prizes and rewards.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/tournament",
+  },
 };
 
 const myFaqs: FAQItem[] = [

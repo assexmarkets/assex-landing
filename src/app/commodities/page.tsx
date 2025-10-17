@@ -10,6 +10,9 @@ export const metadata = {
   title: "Commodities Trading | Assex Markets",
   description:
     "Trade global commodities like oil, gas, and agricultural products with Assex Markets. Access competitive spreads and powerful tools for smarter trading.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/commodities",
+  },
 };
 
 const myFaqs: FAQItem[] = [

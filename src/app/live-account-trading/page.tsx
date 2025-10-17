@@ -11,6 +11,9 @@ export const metadata = {
   title: "Live Account Trading | Assex Markets",
   description:
     "Open a live trading account with Assex Markets today. Access real markets, secure platforms, and a world of trading opportunities.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/live-account-trading",
+  },
 };
 
 const benefitsData = [

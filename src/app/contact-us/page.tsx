@@ -8,6 +8,9 @@ export const metadata = {
   title: "Contact Us | Assex Markets",
   description:
     "Get in touch with Assex Markets. Our support team is available 24/7 to help you with your trading, account, or platform-related queries.",
+  alternates: {
+    canonical: "https://www.assexmarkets.com/contact-us",
+  },
 };
 const ContactUsPage = () => {
   return (
