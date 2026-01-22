@@ -133,7 +133,7 @@ const Fee = () => {
         ]}
         rightImage={
           <Image
-            src="/images/priceTag.png"
+            src="/images/PriceTag.png"
             alt="Tag"
             width={376}
             height={376}
