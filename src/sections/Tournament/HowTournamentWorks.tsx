@@ -17,7 +17,7 @@ const Badge = ({ text }: { text: string }) => (
     initial={{ opacity: 0, scale: 0.8 }}
     whileInView={{ opacity: 1, scale: 1 }}
     viewport={{ once: true }}
-    transition={{ duration: 0.6, ease: "easeOut" }}
+    transition={{ duration: 0.6 }}
   >
     <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 via-teal-400 to-emerald-400 rounded-full blur opacity-30 animate-pulse"></div>
     <div className="relative inline-flex items-center bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200/50 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold shadow-lg backdrop-blur-sm">
@@ -60,7 +60,7 @@ const TournamentStepCard = ({
       scale: 1,
       transition: {
         duration: 0.8,
-        ease: [0.25, 0.25, 0, 1],
+        // ease: [0.25, 0.25, 0, 1],
         delay: index * 0.2,
       },
     },
@@ -74,7 +74,7 @@ const TournamentStepCard = ({
       transition: {
         duration: 0.6,
         delay: index * 0.2 + 0.3,
-        ease: "easeOut",
+        // ease: [0.4, 0, 0.2, 1],,
       },
     },
   };
@@ -213,7 +213,7 @@ const HowTournamentWorks = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: "easeOut",
+        // ease: [0.4, 0, 0.2, 1],,
       },
     },
   };

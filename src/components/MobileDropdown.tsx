@@ -16,7 +16,7 @@ export default function MobileDropdown({
       initial={{ opacity: 0, height: 0 }}
       animate={{ opacity: 1, height: "auto" }}
       exit={{ opacity: 0, height: 0 }}
-      transition={{ duration: 0.35, ease: "easeOut" }}
+      transition={{ duration: 0.35 }}
       className="flex flex-col gap-2 py-2"
     >
       {links?.map((link) => (

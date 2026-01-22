@@ -38,7 +38,7 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
         <motion.div
           initial={{ opacity: 0, x: reverse ? 100 : -100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6 }}
           className="w-full lg:max-w-[747px] text-center lg:text-left"
         >
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-secondary font-bold text-[#1F0d3f] leading-tight">
@@ -74,7 +74,7 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
                   onClick={() =>
                     window.open(
                       "https://my.assexmarkets.com/auth/register",
-                      "_blank"
+                      "_blank",
                     )
                   }
                 />
@@ -89,7 +89,7 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
                   onClick={() =>
                     window.open(
                       "https://my.assexmarkets.com/auth/register",
-                      "_blank"
+                      "_blank",
                     )
                   }
                 />
@@ -102,7 +102,7 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
         <motion.div
           initial={{ opacity: 0, x: reverse ? -100 : 100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           className="w-full max-w-xl flex justify-center"
         >
           {imageElement}

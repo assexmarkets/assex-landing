@@ -15,7 +15,7 @@ const containerVariants = {
   visible: (i = 1) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.2, duration: 0.6, ease: "easeOut" },
+    transition: { delay: i * 0.2, duration: 0.6 },
   }),
 };
 
@@ -108,7 +108,7 @@ const StandardTradingAccountTypes = () => {
               onClick={() =>
                 window.open(
                   "https://my.assexmarkets.com/auth/register",
-                  "_blank"
+                  "_blank",
                 )
               }
               className="flex items-center gap-2 bg-[white] text-[#2D3139] rounded-[48px] font-medium border border-[#2D3139]/40"

@@ -18,7 +18,7 @@ const textVariant = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.2, duration: 0.6, ease: "easeOut" },
+    transition: { delay: i * 0.2, duration: 0.6 },
   }),
 };
 
@@ -27,7 +27,7 @@ const imageVariant = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.6 },
   },
 };
 
@@ -56,7 +56,7 @@ const TradingPageCTA: React.FC<TradingPageCTAProps> = ({
         className={cn(
           "absolute inset-0",
           "[background-size:40px_40px]",
-          "[background-image:linear-gradient(to_right,#2e1d57_1px,transparent_1px),linear-gradient(to_bottom,#2e1d57_1px,transparent_1px)]"
+          "[background-image:linear-gradient(to_right,#2e1d57_1px,transparent_1px),linear-gradient(to_bottom,#2e1d57_1px,transparent_1px)]",
         )}
       />
       {/* Radial Fade Overlay */}
@@ -123,7 +123,7 @@ const TradingPageCTA: React.FC<TradingPageCTAProps> = ({
               onClick={() =>
                 window.open(
                   "https://my.assexmarkets.com/auth/register",
-                  "_blank"
+                  "_blank",
                 )
               }
             />
@@ -135,7 +135,7 @@ const TradingPageCTA: React.FC<TradingPageCTAProps> = ({
               onClick={() =>
                 window.open(
                   "https://my.assexmarkets.com/auth/register",
-                  "_blank"
+                  "_blank",
                 )
               }
             />

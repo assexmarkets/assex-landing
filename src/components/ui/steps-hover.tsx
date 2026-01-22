@@ -25,7 +25,7 @@ export const StepsHover = ({
   >("left");
 
   const handleMouseEnter = (
-    event: React.MouseEvent<HTMLDivElement, MouseEvent>
+    event: React.MouseEvent<HTMLDivElement, MouseEvent>,
   ) => {
     if (!ref.current) return;
 
@@ -51,7 +51,7 @@ export const StepsHover = ({
 
   const getDirection = (
     ev: React.MouseEvent<HTMLDivElement, MouseEvent>,
-    obj: HTMLElement
+    obj: HTMLElement,
   ) => {
     const { width: w, height: h, left, top } = obj.getBoundingClientRect();
     const x = ev.clientX - left - (w / 2) * (w > h ? h / w : 1);
@@ -66,7 +66,7 @@ export const StepsHover = ({
       ref={ref}
       className={cn(
         "w-[364px] h-[430px] bg-transparent rounded-3xl overflow-hidden relative group/card shadow-md",
-        className
+        className,
       )}
     >
       <AnimatePresence mode="wait">
@@ -80,7 +80,7 @@ export const StepsHover = ({
           <motion.div
             variants={variants}
             className="h-full w-full relative bg-white"
-            transition={{ duration: 0.2, ease: "easeOut" }}
+            transition={{ duration: 0.2 }}
           >
             <Image
               alt="step-image"
@@ -89,16 +89,16 @@ export const StepsHover = ({
               height={430}
               className={cn(
                 "w-full h-full object-contain transition-transform duration-300 ease-in-out",
-                imageClassName
+                imageClassName,
               )}
             />
           </motion.div>
           <motion.div
             variants={textVariants}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            transition={{ duration: 0.5 }}
             className={cn(
               "absolute bottom-4 left-4 z-20 text-white",
-              childrenClassName
+              childrenClassName,
             )}
           >
             {children}

@@ -18,7 +18,7 @@ const WhatSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6 }}
         >
           <div className="">
             <Image
@@ -39,7 +39,7 @@ const WhatSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
           <h2
             className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px]

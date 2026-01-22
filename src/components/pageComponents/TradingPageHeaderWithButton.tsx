@@ -24,7 +24,7 @@ const containerVariants = {
     y: 0,
     transition: {
       duration: 0.8,
-      ease: "easeOut",
+      // // ease: [0.4, 0, 0.2, 1],,
     },
   },
 };
@@ -56,7 +56,7 @@ export const TradingPageHeaderWithButton: React.FC<TradingPageHeaderProps> = ({
         }}
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.6 }}
       >
         {renderTitle()}
       </motion.h1>

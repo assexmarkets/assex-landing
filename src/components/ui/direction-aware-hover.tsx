@@ -26,7 +26,7 @@ export const DirectionAwareHover = ({
   >("left");
 
   const handleMouseEnter = (
-    event: React.MouseEvent<HTMLDivElement, MouseEvent>
+    event: React.MouseEvent<HTMLDivElement, MouseEvent>,
   ) => {
     if (!ref.current) return;
 
@@ -53,7 +53,7 @@ export const DirectionAwareHover = ({
 
   const getDirection = (
     ev: React.MouseEvent<HTMLDivElement, MouseEvent>,
-    obj: HTMLElement
+    obj: HTMLElement,
   ) => {
     const { width: w, height: h, left, top } = obj.getBoundingClientRect();
     const x = ev.clientX - left - (w / 2) * (w > h ? h / w : 1);
@@ -68,7 +68,7 @@ export const DirectionAwareHover = ({
       ref={ref}
       className={cn(
         "h-full w-full bg-transparent rounded-lg overflow-hidden group/card relative",
-        className
+        className,
       )}
     >
       <AnimatePresence mode="wait">
@@ -84,7 +84,7 @@ export const DirectionAwareHover = ({
             className="h-full w-full relative bg-gray-50 "
             transition={{
               duration: 0.2,
-              ease: "easeOut",
+              // ease: [0.4, 0, 0.2, 1],,
             }}
           >
             <Image
@@ -99,11 +99,11 @@ export const DirectionAwareHover = ({
             variants={textVariants}
             transition={{
               duration: 0.5,
-              ease: "easeOut",
+              // ease: [0.4, 0, 0.2, 1],,
             }}
             className={cn(
               "text-white absolute bottom-4 left-4 z-40",
-              childrenClassName
+              childrenClassName,
             )}
           >
             {children}

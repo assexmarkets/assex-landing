@@ -82,7 +82,7 @@ export default function MobileMenu() {
                           initial={{ opacity: 0, height: 0, y: -5 }}
                           animate={{ opacity: 1, height: "auto", y: 0 }}
                           exit={{ opacity: 0, height: 0, y: -5 }}
-                          transition={{ duration: 0.3, ease: "easeOut" }}
+                          transition={{ duration: 0.3 }}
                           className="overflow-hidden ml-2 pl-2 py-4 border border-[#4B8BFF] rounded-lg bg-[#1da1f2]/5"
                         >
                           <MobileDropdown

@@ -96,7 +96,7 @@ export const WhyChooseTournament = () => {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut",
+        // ease: [0.4, 0, 0.2, 1],,
       },
     },
   };
@@ -453,7 +453,7 @@ export const WhyChooseTournament = () => {
                   onClick={() =>
                     window.open(
                       "https://my.assexmarkets.com/auth/register",
-                      "_blank"
+                      "_blank",
                     )
                   }
                   className="overflow-hidden" // Optional, matches your design intent

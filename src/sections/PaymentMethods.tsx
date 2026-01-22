@@ -11,7 +11,7 @@ const fadeUp = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.6 },
   },
 };
 
@@ -22,7 +22,7 @@ const cardAnimation = {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { delay: 0.4, duration: 0.8, ease: "easeOut" },
+    transition: { delay: 0.4, duration: 0.8 },
   },
 };
 
@@ -51,7 +51,7 @@ const PaymentMethods = () => {
               "absolute inset-0 z-0 rounded-[inherit]",
               "[background-size:40px_40px]",
               "[background-image:linear-gradient(to_right,#3a2a61_1px,transparent_1px),linear-gradient(to_bottom,#3a2a61_1px,transparent_1px)]",
-              "dark:[background-image:linear-gradient(to_right,#2b1d4c_1px,transparent_1px),linear-gradient(to_bottom,#2b1d4c_1px,transparent_1px)]"
+              "dark:[background-image:linear-gradient(to_right,#2b1d4c_1px,transparent_1px),linear-gradient(to_bottom,#2b1d4c_1px,transparent_1px)]",
             )}
           />
 

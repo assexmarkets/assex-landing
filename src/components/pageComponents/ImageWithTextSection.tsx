@@ -43,7 +43,7 @@ const ImageWithTextSection: React.FC<ImageWithTextSectionProps> = ({
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6 }}
         >
           <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1f0d3f] mb-4 whitespace-pre-line leading-loose">
             {title}
@@ -56,7 +56,7 @@ const ImageWithTextSection: React.FC<ImageWithTextSectionProps> = ({
               onClick={() =>
                 window.open(
                   "https://my.assexmarkets.com/auth/register",
-                  "_blank"
+                  "_blank",
                 )
               }
               text={buttonText}
@@ -76,7 +76,7 @@ const ImageWithTextSection: React.FC<ImageWithTextSectionProps> = ({
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div
             className={`w-full max-w-[500px] md:max-w-[600px] lg:max-w-[480px] xl:max-w-[560px] flex justify-center lg:justify-${

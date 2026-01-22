@@ -12,7 +12,7 @@ const SupportedPaymentsSection = () => {
  font-bold"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
           Supported Payment Methods
@@ -23,7 +23,7 @@ const SupportedPaymentsSection = () => {
           className="mt-4 text-sm sm:text-base md:text-lg leading-relaxed mx-auto lg:mx-0"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
           Discover effortless funding at AssexMarkets, featuring reliable
@@ -36,7 +36,7 @@ const SupportedPaymentsSection = () => {
           className="flex flex-wrap gap-6 justify-center items-center mt-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
           <Image

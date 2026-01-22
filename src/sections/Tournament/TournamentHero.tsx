@@ -23,7 +23,7 @@ export const TournamentHero = () => {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut",
+        // ease: [0.4, 0, 0.2, 1],,
       },
     },
   };
@@ -33,7 +33,7 @@ export const TournamentHero = () => {
     transition: {
       duration: 3,
       repeat: Infinity,
-      ease: "easeInOut",
+      // ease: "easeInOut",
     },
   };
 
@@ -42,7 +42,7 @@ export const TournamentHero = () => {
     transition: {
       duration: 2,
       repeat: Infinity,
-      ease: "easeInOut",
+      // ease: "easeInOut",
     },
   };
 
@@ -55,7 +55,7 @@ export const TournamentHero = () => {
       transition: {
         duration: 0.8,
         delay: i * 0.1,
-        ease: "easeOut",
+        // ease: [0.4, 0, 0.2, 1],,
       },
     }),
   };
@@ -68,7 +68,7 @@ export const TournamentHero = () => {
       transition: {
         duration: 2,
         delay: 1,
-        ease: "easeInOut",
+        // ease: "easeInOut",
       },
     },
   };

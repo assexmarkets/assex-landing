@@ -86,7 +86,7 @@ const TradingCalculatorForm = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          transition={{ duration: 0.7 }}
           className="rounded-2xl shadow-xl p-6 sm:p-10 lg:p-12 space-y-10 border border-stone-100"
         >
           <div className="text-center">

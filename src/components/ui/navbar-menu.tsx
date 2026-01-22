@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import { motion } from "motion/react";
+import { motion, Transition } from "motion/react";
 import Image from "next/image";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-const transition = {
+const transition: Transition = {
   type: "spring",
   mass: 0.5,
   damping: 11.5,
@@ -107,8 +107,10 @@ export const ProductItem = ({
   );
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({
+  children,
+  ...rest
+}: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
   return (
     <a {...rest} className="text-[#1f0e3f] font-medium hover:font-bold">
       {children}

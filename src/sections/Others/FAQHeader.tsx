@@ -17,7 +17,7 @@ const FAQHeader = ({ searchTerm, setSearchTerm }: FAQHeaderProps) => {
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6 }}
           className="w-full lg:max-w-[747px] text-center lg:text-left"
         >
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-secondary font-bold text-[#1F0d3f] leading-tight">
@@ -45,7 +45,7 @@ const FAQHeader = ({ searchTerm, setSearchTerm }: FAQHeaderProps) => {
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           className="w-full max-w-xl flex justify-center mt-10 lg:mt-0"
         >
           <Image

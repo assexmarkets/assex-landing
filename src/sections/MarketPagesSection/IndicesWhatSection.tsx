@@ -45,7 +45,7 @@ const IndicesWhatSection = () => {
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
           className="w-full max-w-[600px] h-[350px] sm:h-[400px] lg:h-[500px] relative rounded-xl overflow-hidden"
         >
