@@ -4,7 +4,6 @@ import SecureInfoSection from "@/sections/TradingPagesSection/SecureInfoSection"
 import TradingHeaderSection from "@/sections/TradingPagesSection/TradingConditionsHeader";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import Image from "next/image";
-import React from "react";
 
 export const metadata = {
   title: "Trading Fees | Assex Markets",
@@ -49,7 +48,7 @@ const Fee = () => {
           {
             title: (
               <>
-                Zero <span className="text-[#0dae94]">Fees</span>
+                Zero <span className="text-primary">Fees</span>
               </>
             ),
             text: "At AssexMarkets, we cover all third-party\n transaction fees—so every deposit and\n withdrawal is smoother, cleaner, and 100%\n transparent.\nYou focus on trading. We’ll handle the fees.",
@@ -59,14 +58,14 @@ const Fee = () => {
                 alt="Security"
                 width={600}
                 height={600}
-                className="w-full h-auto max-w-[300px] md:max-w-[500px] lg:max-w-[600px] mx-auto object-contain"
+                className="w-full h-auto max-w-75 md:max-w-125 lg:max-w-150 mx-auto object-contain"
               />
             ),
           },
           {
             title: (
               <>
-                Say <span className="text-[#0dae94]">goodbye</span> to swaps
+                Say <span className="text-primary">goodbye</span> to swaps
               </>
             ),
 
@@ -77,15 +76,15 @@ const Fee = () => {
                 alt="Goodbye"
                 width={320}
                 height={348}
-                className="w-full h-auto max-w-[280px] md:max-w-[320px] lg:max-w-[348px] mx-auto object-contain"
+                className="w-full h-auto max-w-70 md:max-w-[320px] lg:max-w-87 mx-auto object-contain"
               />
             ),
           },
           {
             title: (
               <>
-                Account for <span className="text-[#0dae94]">every</span> type
-                of trader
+                Account for <span className="text-primary">every</span> type of
+                trader
               </>
             ),
             text: "Choose the one that will maximize your returns while minimizing your costs.",
@@ -95,7 +94,7 @@ const Fee = () => {
                 alt="Wallet"
                 width={400}
                 height={267}
-                className="w-full h-auto max-w-[300px] md:max-w-[360px] lg:max-w-[400px] mx-auto object-contain"
+                className="w-full h-auto max-w-75 md:max-w-90 lg:max-w-100 mx-auto object-contain"
               />
             ),
           },
@@ -138,7 +137,7 @@ const Fee = () => {
             width={376}
             height={376}
             priority
-            className="w-full h-auto max-w-[240px] sm:max-w-[300px] md:max-w-[340px] lg:max-w-[376px] object-contain mx-auto"
+            className="w-full h-auto max-w-60 sm:max-w-75 md:max-w-85 lg:max-w-94 object-contain mx-auto"
           />
         }
         rightText="Register in 5 minutes with just 3 easy steps"
