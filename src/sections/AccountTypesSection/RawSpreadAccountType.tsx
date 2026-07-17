@@ -62,7 +62,7 @@ const RawSpreadAccountType = () => {
         "Maximum Leverage 1:500",
         "Spread from 0.0 pips",
         "Commission $2.50 per lot",
-        "Minimum Deposit $250",
+        "Minimum Deposit $100",
       ]}
     />
         </motion.div>

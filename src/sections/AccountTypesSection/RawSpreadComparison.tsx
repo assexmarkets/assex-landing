@@ -19,7 +19,7 @@ const RawSpreadComparison = () => {
         ]}
       planValues={[
   {
-    "Minimum Deposit": "$250",
+    "Minimum Deposit": "$100",
     Spread: "From 0.0 pips",
     Commission: "$2.50 per lot",
     "Maximum Leverage": "1:500",
