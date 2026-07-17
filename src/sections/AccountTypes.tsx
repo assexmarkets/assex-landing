@@ -96,7 +96,7 @@ const AccountTypes = () => {
     benefits={[
       "Spread: from 0.0 pips",
       "Commission: $2.50/lot",
-      "Minimum Deposit: $250",
+      "Minimum Deposit: $10",
       "Leverage: 1:500",
       "Swap: 0",
       "Minimum Trade: 0.01 lot",
