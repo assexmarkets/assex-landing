@@ -17,21 +17,21 @@ const RawSpreadComparison = () => {
           "Maximum number of positions",
           "Hedged margin",
         ]}
-        planValues={[
-          {
-            "Minimum Deposit": "Depends on payment system",
-            Spread: "From 0.0 pips",
-            Commission: "$3.5 per lot per side",
-            "Maximum Leverage": "1:500",
-            Instruments:
-              "Forex, metals, cryptocurrencies, energies and indices",
-            "Minimum Lot Size": "0.01",
-            "Maximum Lot Size": "100",
-            "Maximum number of positions": "200",
-            "Hedged margin": "50%",
-          },
-          {},
-        ]}
+      planValues={[
+  {
+    "Minimum Deposit": "$250",
+    Spread: "From 0.0 pips",
+    Commission: "$2.50 per lot",
+    "Maximum Leverage": "1:500",
+    Instruments:
+      "Forex, metals, cryptocurrencies, energies and indices",
+    "Minimum Lot Size": "0.01",
+    "Maximum Lot Size": "100",
+    "Maximum number of positions": "200",
+    "Hedged margin": "50%",
+  },
+  {},
+]}
       />
     </section>
   );

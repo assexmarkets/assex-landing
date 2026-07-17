@@ -33,16 +33,16 @@ const StandardTradingAccountTypes = () => {
           custom={0}
         >
           <Badge text="Standard Trading Accounts" />
-          <h2
-            className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px]
+      <h2
+  className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px]
  font-bold text-[#1f0e3f]"
-          >
-            Reliable Trading for Every Trader
-          </h2>
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed">
-            Experience flexibility and simplicity with our Standard account
-            types— designed for both beginners and seasoned traders.
-          </p>
+>
+  Reliable Trading for Every Trader
+</h2>
+<p className="text-sm sm:text-base md:text-lg leading-relaxed">
+  Simple, flexible, commission-free trading with our Standard account —
+  built for beginners and seasoned traders alike.
+</p>
         </motion.div>
 
         {/* Plan Cards */}
@@ -58,34 +58,34 @@ const StandardTradingAccountTypes = () => {
               custom={index + 1}
               variants={containerVariants}
             >
-              {index === 0 && (
-                <PlanCard
-                  title="Standard"
-                  description="Our most popular account type with no commissions and tight spreads."
-                  icon={<StandardIcon />}
-                  benefits={[
-                    "Forex, metals, cryptocurrencies, energies and indices",
-                    "Maximum Leverage 1:Unlimited",
-                    "Spread from 0.3 pips",
-                    "Minimum Deposit $100",
-                    "No commission",
-                  ]}
-                />
-              )}
-              {index === 1 && (
-                <PlanCard
-                  title="Standard Cent"
-                  description="Great for beginners. Trade smaller lot sizes with all Standard benefits."
-                  icon={<RawSpreadIcon />}
-                  benefits={[
-                    "Forex, metals, cryptocurrencies, energies and indices",
-                    "Maximum Leverage 1:Unlimited",
-                    "Spread from 0.3 pips",
-                    "Minimum Deposit $10",
-                    "No commission",
-                  ]}
-                />
-              )}
+             {index === 0 && (
+  <PlanCard
+    title="Standard"
+    description="Our most popular account — commission-free, with tight spreads."
+    icon={<StandardIcon />}
+    benefits={[
+      "Forex, metals, cryptocurrencies, energies and indices",
+      "Maximum Leverage 1:500",
+      "Spread from 0.15 pips",
+      "Minimum Deposit $10",
+      "No commission",
+    ]}
+  />
+)}
+{index === 1 && (
+  <PlanCard
+    title="Standard Cent"
+    description="Perfect for beginners — trade smaller lot sizes with all Standard benefits."
+    icon={<RawSpreadIcon />}
+    benefits={[
+      "Forex, metals, cryptocurrencies, energies and indices",
+      "Maximum Leverage 1:500",
+      "Spread from 0.15 pips",
+      "Minimum Deposit $10",
+      "No commission",
+    ]}
+  />
+)}
             </motion.div>
           ))}
         </motion.div>

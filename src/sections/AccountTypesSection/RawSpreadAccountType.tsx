@@ -32,16 +32,16 @@ const RawSpreadAccountType = () => {
           custom={0}
         >
           <Badge text="Raw Spread Account" />
-          <h2
-            className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px]
+        <h2
+  className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px]
  font-bold text-[#1f0e3f]"
-          >
-            Maximum Power with Leverage Plus
-          </h2>
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed">
-            Designed for high-impact trading—access ultra-high leverage and raw
-            pricing with speed and precision.
-          </p>
+>
+  Raw Pricing with Raw Spread
+</h2>
+<p className="text-sm sm:text-base md:text-lg leading-relaxed">
+  Built for high-volume trading — raw spreads from 0.0 pips with a low
+  commission, executed with speed and precision.
+</p>
         </motion.div>
 
         {/* Plan Card */}
@@ -53,18 +53,18 @@ const RawSpreadAccountType = () => {
           variants={containerVariants}
           custom={1}
         >
-          <PlanCard
-            title="Raw Spread"
-            description="Trade with extreme flexibility and control using high leverage and tight spreads."
-            icon={<RawSpreadIcon />}
-            benefits={[
-              "Forex, metals, energies, indices",
-              "Maximum Leverage 1:2000",
-              "Spread from 0.0 pips",
-              "Minimum Deposit $10",
-              "Commission $3 per lot",
-            ]}
-          />
+            <PlanCard
+      title="Raw Spread"
+      description="Raw spreads from 0.0 pips with a low fixed commission — built for high-volume traders."
+      icon={<RawSpreadIcon />}
+      benefits={[
+        "Forex, metals, energies, indices",
+        "Maximum Leverage 1:500",
+        "Spread from 0.0 pips",
+        "Commission $2.50 per lot",
+        "Minimum Deposit $250",
+      ]}
+    />
         </motion.div>
 
         {/* CTA Demo Section */}

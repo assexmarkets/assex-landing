@@ -60,48 +60,49 @@ const AccountTypes = () => {
               variants={containerVariants}
             >
               {index === 0 && (
-                <PlanCard
-                  title="Standard"
-                  description="Straightforward account with great leverage and zero swaps"
-                  icon={<StandardIcon />}
-                  benefits={[
-                    "Spread: 0",
-                    "Minimum Deposit: $1",
-                    "Leverage: 1:200",
-                    "Swap: 0",
-                    "Minimum Trade: 0.01 lot",
-                  ]}
-                />
-              )}
-              {index === 1 && (
-                <PlanCard
-                  title="Leverage Plus"
-                  description="Enjoy zero spreads and unlimited leverage with a minimum deposit of just $1"
-                  icon={<ProIcon />}
-                  isPro
-                  benefits={[
-                    "Spread: 0",
-                    "Minimum Deposit: $1",
-                    "Leverage: Unlimited",
-                    "Swap: 0",
-                    "Minimum Trade: 0.01 lot",
-                  ]}
-                />
-              )}
-              {index === 2 && (
-                <PlanCard
-                  title="Raw Spread"
-                  description="Best-in-class leverage and raw spreads for high-volume traders"
-                  icon={<RawSpreadIcon />}
-                  benefits={[
-                    "Spread: 0",
-                    "Minimum Deposit: $1",
-                    "Leverage: 1:500",
-                    "Swap: 0",
-                    "Minimum Trade: 0.01 lot",
-                  ]}
-                />
-              )}
+  <PlanCard
+    title="Standard"
+    description="Simple, commission-free trading with reliable leverage and zero swaps."
+    icon={<StandardIcon />}
+    benefits={[
+      "Spread: from 0.15 pips",
+      "Minimum Deposit: $10",
+      "Leverage: 1:500",
+      "Swap: 0",
+      "Minimum Trade: 0.01 lot",
+    ]}
+  />
+)}
+{index === 1 && (
+  <PlanCard
+    title="Leverage Plus"
+    description="Tight 0.10 pip spreads and unlimited leverage, commission-free, from just $10."
+    icon={<ProIcon />}
+    isPro
+    benefits={[
+      "Spread: from 0.10 pips",
+      "Minimum Deposit: $10",
+      "Leverage: Unlimited",
+      "Swap: 0",
+      "Minimum Trade: 0.01 lot",
+    ]}
+  />
+)}
+{index === 2 && (
+  <PlanCard
+    title="Raw Spread"
+    description="Raw spreads from 0.0 pips with a low commission — built for high-volume traders."
+    icon={<RawSpreadIcon />}
+    benefits={[
+      "Spread: from 0.0 pips",
+      "Commission: $2.50/lot",
+      "Minimum Deposit: $250",
+      "Leverage: 1:500",
+      "Swap: 0",
+      "Minimum Trade: 0.01 lot",
+    ]}
+  />
+)}
             </motion.div>
           ))}
         </motion.div>

@@ -12,21 +12,21 @@ const WhyRawSpreadAccount = () => {
           Why Choose the Raw Spread Account?
         </h1>
         <div className="mt-10 lg:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center w-full">
-          <BenefitCard
-            icon={<TrendIcon />}
-            title="Low, Transparent Commission"
-            description="Pay a small, fixed commission per lot with no hidden fees or surprises."
-          />
-          <BenefitCard
-            icon={<TrendIcon />}
-            title="Fast Execution"
-            description="Execute your trades with minimal slippage and market-leading speed on the MetaTrader 5 platform."
-          />
-          <BenefitCard
-            icon={<TrendIcon />}
-            title="Spreads from 0.0 Pips"
-            description="Access the rawest pricing straight from liquidity providers with no markups added."
-          />
+         <BenefitCard
+  icon={<TrendIcon />}
+  title="Low, Transparent Commission"
+  description="Pay a low fixed $2.50 per lot — no hidden fees, no surprises."
+/>
+<BenefitCard
+  icon={<TrendIcon />}
+  title="Fast Execution"
+  description="Trade with minimal slippage and market-leading speed on MetaTrader 5."
+/>
+<BenefitCard
+  icon={<TrendIcon />}
+  title="Spreads from 0.0 Pips"
+  description="Get the rawest pricing straight from our liquidity providers, with zero markup."
+/>
         </div>
       </div>
     </section>

@@ -32,13 +32,13 @@ const LeveragePlusAccountType = () => {
           custom={0}
         >
           <Badge text="Leverage Plus Account" />
-          <h2 className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#1f0e3f]">
-            Maximum Power with Leverage Plus
-          </h2>
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed">
-            Designed for high-impact trading—access ultra-high leverage and raw
-            pricing with speed and precision.
-          </p>
+       <h2 className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#1f0e3f]">
+  Maximum Power with Leverage Plus
+</h2>
+<p className="text-sm sm:text-base md:text-lg leading-relaxed">
+  Built for high-impact trading — unlimited leverage and tight 0.10 pip
+  spreads, commission-free, with speed and precision.
+</p>
         </motion.div>
 
         {/* Plan Card */}
@@ -50,18 +50,18 @@ const LeveragePlusAccountType = () => {
           variants={containerVariants}
           custom={1}
         >
-          <PlanCard
-            title="Leverage Plus"
-            description="Trade with extreme flexibility and control using high leverage and tight spreads."
-            icon={<RawSpreadIcon />}
-            benefits={[
-              "Forex, metals, energies, indices",
-              "Maximum Leverage 1:2000",
-              "Spread from 0.0 pips",
-              "Minimum Deposit $10",
-              "Commission $3 per lot",
-            ]}
-          />
+     <PlanCard
+  title="Leverage Plus"
+  description="Trade with total flexibility using unlimited leverage and tight, commission-free spreads."
+  icon={<RawSpreadIcon />}
+  benefits={[
+    "Forex, metals, energies, indices",
+    "Leverage: Unlimited",
+    "Spread from 0.10 pips",
+    "Minimum Deposit $10",
+    "Commission: None",
+  ]}
+/>
         </motion.div>
 
         {/* CTA Demo Section */}

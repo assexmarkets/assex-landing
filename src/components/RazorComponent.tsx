@@ -105,48 +105,12 @@ const Card = ({
 function getCardText(title: string) {
   switch (title) {
     case "Razor Thin Spread":
-      return "Reduce your cost of execution by trading some of the tightest pricing in the industry. With spreads starting at 0.0 on EUR/USD and averaging at 0.2, making profitable trades has never been easier.";
+      return "Trade on some of the tightest pricing around. Raw Spread starts from 0.0 pips with a low $2.50 per-lot commission, while Standard (0.15 pip) and Leverage Plus (0.10 pip) stay fully commission-free — pick the account that matches how you trade.";
     case "Lightning Fast Execution":
-      return "With strong liquidity relationships and powerful technology, trades are executed in a snap. No re-quotes, no rejection, no manual trade delay.";
+      return "Deep prime liquidity and solid infrastructure fill your orders in a snap — no re-quotes, no rejections, no delays. Every account runs on the same liquidity pool.";
     case "The Power of MT5":
-      return "We offer all our clients the best trading solution in the form of our MT4 accounts powered by data feed directly from our pool of prime liquidity providers.";
+      return "Trade on MT5, streaming live prices straight from our prime liquidity providers. Available across Standard, Leverage Plus, and Raw Spread — on desktop, web, and mobile.";
     default:
       return "";
   }
 }
-
-// === Aceternity Icon ===
-// const AceternityIcon = () => (
-//   <svg
-//     width="66"
-//     height="65"
-//     viewBox="0 0 66 65"
-//     fill="none"
-//     xmlns="http://www.w3.org/2000/svg"
-//     className="h-10 w-10 text-black dark:text-white group-hover/canvas-card:text-white"
-//   >
-//     <path
-//       d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-//       stroke="currentColor"
-//       strokeWidth="15"
-//       strokeMiterlimit="3.86874"
-//       strokeLinecap="round"
-//       style={{ mixBlendMode: "darken" }}
-//     />
-//   </svg>
-// );
-
-// === Corner Icon ===
-// const Icon = ({ className, ...rest }: React.SVGProps<SVGSVGElement>) => (
-//   <svg
-//     xmlns="http://www.w3.org/2000/svg"
-//     fill="none"
-//     viewBox="0 0 24 24"
-//     strokeWidth="1.5"
-//     stroke="currentColor"
-//     className={className}
-//     {...rest}
-//   >
-//     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
-//   </svg>
-// );

@@ -8,25 +8,25 @@ const WhyLeveragePlusAccount = () => {
     <section className="section-padding">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         <Badge text="Features" />
-        <h1 className="font-secondary font-bold text-base sm:text-xl md:text-2xl lg:text-[32px] text-[#191A15] mt-6">
-          Why Choose the Leverage Standard Account?
-        </h1>
+       <h1 className="font-secondary font-bold text-base sm:text-xl md:text-2xl lg:text-[32px] text-[#191A15] mt-6">
+  Why Choose the Leverage Plus Account?
+</h1>
         <div className="mt-10 lg:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center w-full">
-          <BenefitCard
-            icon={<TrendIcon />}
-            title="High Leverage, Greater Flexibility"
-            description="Trade with leverage of up to 1:1000, allowing you to control larger positions with a smaller investment."
-          />
-          <BenefitCard
-            icon={<TrendIcon />}
-            title="Wide Range of Markets"
-            description="Access forex, commodities, indices, energies, and cryptocurrencies — all through the world-class MT5 platform."
-          />
-          <BenefitCard
-            icon={<TrendIcon />}
-            title="Optimal for Multiple Strategies"
-            description="Ideal for swing traders, position traders, and aggressive intraday strategies aiming to maximize returns."
-          />
+         <BenefitCard
+  icon={<TrendIcon />}
+  title="Unlimited Leverage, Total Flexibility"
+  description="Trade with unlimited leverage, controlling far larger positions from a smaller deposit."
+/>
+<BenefitCard
+  icon={<TrendIcon />}
+  title="Wide Range of Markets"
+  description="Access forex, commodities, indices, energies, and cryptocurrencies — all through the world-class MT5 platform."
+/>
+<BenefitCard
+  icon={<TrendIcon />}
+  title="Optimal for Multiple Strategies"
+  description="Ideal for swing traders, position traders, and aggressive intraday strategies aiming to maximize returns."
+/>
         </div>
       </div>
     </section>

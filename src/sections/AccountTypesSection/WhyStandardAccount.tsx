@@ -12,21 +12,21 @@ const WhyStandardAccount = () => {
           Why Choose the Standard Account?
         </h1>
         <div className="mt-10 lg:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center w-full">
-          <BenefitCard
-            icon={<TrendIcon />}
-            title="No Commissions"
-            description="Enjoy commission-free trading. All costs are included in the spreads for full transparency."
-          />
-          <BenefitCard
-            icon={<TrendIcon />}
-            title="Competitive Spreads"
-            description="Access forex, commodities, indices, energies, and cryptocurrencies — all through the world-class MT5 platform."
-          />
-          <BenefitCard
-            icon={<TrendIcon />}
-            title="User-Friendly Setup"
-            description="Designed for an easy start — open an account quickly and begin trading immediately without complex setups."
-          />
+        <BenefitCard
+  icon={<TrendIcon />}
+  title="No Commissions"
+  description="Commission-free trading, with all costs built into the spread for full transparency."
+/>
+<BenefitCard
+  icon={<TrendIcon />}
+  title="Competitive Spreads"
+  description="Trade from just 0.15 pips — tight, transparent pricing with nothing added on top."
+/>
+<BenefitCard
+  icon={<TrendIcon />}
+  title="User-Friendly Setup"
+  description="Built for an easy start — open an account in minutes and begin trading right away."
+/>
         </div>
       </div>
     </section>
