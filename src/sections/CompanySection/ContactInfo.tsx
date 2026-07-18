@@ -30,7 +30,7 @@ const ContactInfo = () => {
             {/** Phone Block */}
             <ContactBlock
               title="Phone Number"
-              contact="+44 7418366311"
+              contact="+44 7897 073991"
               note="Assistance hours: Monday - Friday, 6 AM to 8 PM WAT"
             />
           </div>
