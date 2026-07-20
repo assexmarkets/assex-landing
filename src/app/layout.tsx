@@ -288,11 +288,11 @@ export default function RootLayout({
             $zoho.salesiq = $zoho.salesiq || { ready: function() {} };
           `}
         </Script>
-        <Script
-          id="zsiqscript"
-          src="https://salesiq.zoho.com/widget?wc=siq97000700e5d0b31e9ee720e4a24a79a0f46645be67d2ca5ade4cdbca3a41edd1"
-          strategy="lazyOnload"
-        />
+       <script
+      src="https://myyarns.sendbaba.com/chat.js"
+      data-key="sb_chat_ad8ba94144578164027ce772"
+      async>
+    </script>
       </body>
     </html>
   );
