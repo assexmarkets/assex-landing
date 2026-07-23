@@ -158,6 +158,26 @@ const Footer = () => {
             </p>
           </div>
 
+          {/* Comoros Registration Card */}
+          <div className="bg-white/30 rounded-lg p-4 border border-[#00CCB1]/20">
+            <h5 className="font-semibold text-[#191a45] mb-2 text-sm">
+              Comoros Registration &amp; Regulatory License
+            </h5>
+            <p>
+              AssexMarkets Global LTD, registered at Bonovo Road, Fomboni,
+              Island of Mohéli, Union of the Comoros, is incorporated under
+              Registration No.<strong> HT00925090</strong>. The company is
+              licensed by the Mwali International Services Authority (MISA) as
+              an International Brokerage and Clearing Company under License
+              No.<strong> BFX2025110</strong>.
+            </p>
+            <p className="mt-2">
+              <strong>Disclaimer:</strong> AssexMarkets Global LTD provides its
+              MetaTrader 5 (MT5) trading services exclusively through its Saint
+              Lucia entity.
+            </p>
+          </div>
+
           {/* Risk Warning */}
           <div className="bg-amber-50/50 border border-amber-200/50 rounded-lg p-4">
             <p>
