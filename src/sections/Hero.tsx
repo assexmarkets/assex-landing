@@ -57,7 +57,7 @@ const Hero = () => {
           <Button
             variant="primary"
             icon={<WhiteFlameButtonIcon />}
-            text="Create a Live Account"
+            text="Sign Up or Sign In"
             size="sm"
             onClick={() =>
               window.open("https://my.assexmarkets.com/auth/register", "_blank")
